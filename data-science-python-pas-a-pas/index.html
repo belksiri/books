@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data science avec Python, pas à pas — ressources du lecteur</title>
+<meta name="description" content="Ressources gratuites du livre Data science avec Python, pas à pas de Belk Siri : données, notebooks, énoncés d'exercices et guide d'installation.">
+<link rel="canonical" href="https://belksiri.github.io/books/data-science-python-pas-a-pas/">
+<meta property="og:title" content="Data science avec Python, pas à pas">
+<meta property="og:description" content="Ressources du lecteur : données, notebooks et fichiers d'exercices.">
+<meta property="og:image" content="https://belksiri.github.io/books/data-science-python-pas-a-pas/couverture/couverture_recto_v1.0.1.png">
+<link rel="icon" href="assets/logo_belksiri.svg" type="image/svg+xml">
+<style>
+@font-face { font-family: "Jakarta"; src: url("assets/PlusJakartaSans-SemiBold.otf") format("opentype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Jakarta"; src: url("assets/PlusJakartaSans-ExtraBold.otf") format("opentype"); font-weight: 800; font-display: swap; }
+:root {
+  --encre: #14213d; --texte: #33415c; --doux: #5c677d; --filet: #dfe3ea;
+  --fond: #ffffff; --fond-2: #f5f7fa; --bleu: #1f4e9c; --turquoise: #12908e;
+  --violet: #6a4c93; --chaud: #e76f51; --code: #0f172a;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fond); color: var(--texte);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+.enveloppe { max-width: 1040px; margin: 0 auto; padding-inline: 20px; }
+header.haut { border-bottom: 1px solid var(--filet); }
+header.haut .enveloppe { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 12px; }
+.marque { display: flex; align-items: center; gap: 10px; color: var(--encre); text-decoration: none;
+  font-family: Jakarta, sans-serif; font-weight: 600; letter-spacing: .01em; }
+.marque img { width: 30px; height: 30px; }
+.haut nav a { color: var(--doux); text-decoration: none; margin-left: 18px; font-size: 15px; }
+.haut nav a:hover { color: var(--bleu); }
+.heros { padding-block: 48px 40px; display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr); gap: 48px; align-items: center; }
+.heros img.couv { width: 100%; height: auto; border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(20,33,61,.08), 0 18px 40px -12px rgba(20,33,61,.28); }
+.surtitre { font-family: Jakarta, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--turquoise); margin: 0 0 10px; }
+h1 { font-family: Jakarta, sans-serif; font-weight: 800; color: var(--encre); font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.08; letter-spacing: -.02em; margin: 0 0 14px; }
+.sous-titre { font-size: 19px; color: var(--texte); margin: 0 0 14px; max-width: 34em; }
+.auteur { font-family: Jakarta, sans-serif; font-weight: 600; color: var(--encre); margin: 0 0 22px; }
+.boutons { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 16px; }
+.bouton { display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px; border-radius: 10px;
+  font-weight: 600; text-decoration: none; font-size: 16px; border: 2px solid var(--bleu); }
+.bouton.plein { background: var(--bleu); color: #fff; }
+.bouton.plein:hover { background: #173d7c; border-color: #173d7c; }
+.bouton.vide { color: var(--bleu); background: #fff; }
+.bouton.vide:hover { background: #eef3fb; }
+.meta { font-size: 14px; color: var(--doux); margin: 0; }
+section { padding-block: 36px; border-top: 1px solid var(--filet); }
+h2 { font-family: Jakarta, sans-serif; font-weight: 800; color: var(--encre); font-size: 26px; letter-spacing: -.01em; margin: 0 0 16px; }
+h3 { font-family: Jakarta, sans-serif; font-weight: 600; color: var(--encre); font-size: 18px; margin: 0 0 8px; }
+.grille { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.carte { background: var(--fond-2); border-radius: 12px; padding: 20px; min-width: 0; }
+pre { background: var(--code); color: #e2e8f0; border-radius: 8px; padding: 14px 16px; overflow-x: auto;
+  font: 14px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; margin: 8px 0 0; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+.empreinte { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; background: var(--fond-2);
+  border-radius: 10px; padding: 12px 14px; }
+.empreinte code { overflow-wrap: anywhere; font-size: 14px; color: var(--encre); flex: 1 1 280px; }
+.empreinte button { border: 1px solid var(--filet); background: #fff; border-radius: 8px; padding: 6px 12px;
+  font: inherit; font-size: 14px; cursor: pointer; color: var(--bleu); }
+ul.liste { padding-left: 20px; margin: 0; }
+ul.liste li { margin: 4px 0; }
+.note { border-left: 4px solid var(--violet); background: #f6f3fa; padding: 14px 16px; border-radius: 0 10px 10px 0; }
+.alerte { border-left: 4px solid var(--chaud); background: #fdf3f0; padding: 14px 16px; border-radius: 0 10px 10px 0; }
+a { color: var(--bleu); }
+footer { border-top: 1px solid var(--filet); padding-block: 28px; font-size: 14px; color: var(--doux); }
+@media (max-width: 760px) {
+  .heros { grid-template-columns: 1fr; gap: 28px; padding-block: 28px; }
+  .heros img.couv { max-width: 260px; margin: 0 auto; display: block; }
+  .grille { grid-template-columns: 1fr; }
+  .haut nav { display: none; }
+  .bouton { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+<header class="haut">
+  <div class="enveloppe">
+    <a class="marque" href="../"><img src="assets/logo_belksiri.svg" alt="" width="30" height="30">Belk Siri</a>
+    <nav><a href="#installer">Installer</a><a href="#contenu">Contenu</a><a href="#probleme">Aide</a></nav>
+  </div>
+</header>
+
+<main class="enveloppe">
+  <div class="heros">
+    <img class="couv" src="couverture/couverture_recto_v1.0.1.png" width="1800" height="2700"
+         alt="Couverture du livre Data science avec Python, pas à pas, de Belk Siri">
+    <div>
+      <p class="surtitre">Ressources du lecteur · v1.0.1</p>
+      <h1>Data science avec Python, pas à pas</h1>
+      <p class="sous-titre">Un seul projet, de l'installation à la décision : explorer, prédire et segmenter des clients</p>
+      <p class="auteur">Belk Siri</p>
+      <p>Apprendre la data science avec Python en menant un seul projet, du
+      premier notebook à la recommandation finale : préparer et explorer les
+      données, prédire, évaluer, segmenter. Cette page réunit les données,
+      les notebooks et les fichiers d'exercices qui accompagnent le livre.</p>
+      <div class="boutons">
+        <a class="bouton plein" href="https://github.com/belksiri/books/releases/download/data-science-python-pas-a-pas-v1.0.1/Ressources_Lecteur_v1.0.1.zip">Télécharger les ressources lecteur</a>
+        <a class="bouton vide" href="https://github.com/belksiri/books/blob/main/data-science-python-pas-a-pas/documentation/GUIDE_INSTALLATION.md">Consulter le guide d'installation</a>
+      </div>
+      <p class="meta">Ressources_Lecteur_v1.0.1.zip · 541 Ko · Python 3.12, 3.13 ou 3.14 ·
+        <a href="ressources/Ressources_Lecteur_v1.0.1.zip">lien direct</a> · <a href="https://github.com/belksiri/books/releases/tag/data-science-python-pas-a-pas-v1.0.1">notes de version</a></p>
+    </div>
+  </div>
+
+  <section aria-labelledby="t-empreinte">
+    <h2 id="t-empreinte">Vérifier le téléchargement</h2>
+    <p>L'empreinte SHA-256 de l'archive doit être exactement :</p>
+    <div class="empreinte">
+      <code id="sha">f63cdf2b4cb0306e46371ec24c01ce584013ca088e6b2ea5f70c5596fec6eb0e</code>
+      <button type="button" id="copier">Copier</button>
+    </div>
+    <div class="grille" style="margin-top:20px">
+      <div class="carte"><h3>macOS (Terminal)</h3>
+        <pre>shasum -a 256 Ressources_Lecteur_v1.0.1.zip</pre></div>
+      <div class="carte"><h3>Windows (PowerShell)</h3>
+        <pre>Get-FileHash Ressources_Lecteur_v1.0.1.zip -Algorithm SHA256</pre></div>
+    </div>
+  </section>
+
+  <section id="installer" aria-labelledby="t-installer">
+    <h2 id="t-installer">Installer</h2>
+    <p>Décompresse l'archive dans ton dossier Documents, puis ouvre un terminal
+    dans le dossier <code>data_science_python_pas_a_pas</code>. Pour un premier
+    résultat sans rien installer, ouvre <code>notebooks/00_demarrage_express.ipynb</code>
+    dans VS Code ou Google Colab.</p>
+    <div class="grille">
+      <div class="carte"><h3>macOS</h3>
+<pre>python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install -e .
+python -m smartmarket.verifier_environnement</pre></div>
+      <div class="carte"><h3>Windows (PowerShell)</h3>
+<pre>py -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install -e .
+python -m smartmarket.verifier_environnement</pre></div>
+    </div>
+    <p>Le diagnostic doit se terminer par « Environnement SmartMarket prêt. ».
+    Si PowerShell refuse l'activation : <code>Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</code>, puis recommence.</p>
+    <p class="alerte">Vérifié sous macOS avec Python 3.12, 3.13 et 3.14.
+    Compatibilité Windows préparée et revue statiquement, mais non validée sur une machine Windows.</p>
+  </section>
+
+  <section id="contenu" aria-labelledby="t-contenu">
+    <h2 id="t-contenu">Ce que contient l'archive</h2>
+    <ul class="liste">
+      <li>les données du projet fictif SmartMarket : export brut, fichier propre, clients à scorer ;</li>
+      <li>un notebook par chapitre, les notebooks des annexes et les énoncés des exercices et des défis (65 notebooks) ;</li>
+      <li>le code du projet, les tests et un script de vérification pour Windows.</li>
+    </ul>
+    <p class="note" style="margin-top:18px"><strong>Corrigés.</strong> Les corrigés rédigés
+    sont dans l'annexe G du livre. Les notebooks corrigés et les fichiers de vérité des
+    données sont distribués séparément et ne sont pas publiés sur cette page.</p>
+    <p>Toutes les données sont fictives : aucune ne décrit une personne ou une entreprise réelle.</p>
+  </section>
+
+  <section id="probleme" aria-labelledby="t-probleme">
+    <h2 id="t-probleme">Un problème ?</h2>
+    <p>Consulte la <a href="https://github.com/belksiri/books/blob/main/data-science-python-pas-a-pas/documentation/FAQ.md">FAQ</a> et l'annexe E du livre, puis
+    <a href="https://github.com/belksiri/books/issues/new?template=probleme_ressources.md">signale le problème sur GitHub</a> en joignant la sortie du diagnostic.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="enveloppe">
+    <p>Data science avec Python, pas à pas — Belk Siri. Ressources v1.0.1. Code : MIT ; données fictives : CC BY 4.0.
+    <a href="https://github.com/belksiri/books/tree/main/data-science-python-pas-a-pas">Dépôt GitHub</a>.</p>
+  </div>
+</footer>
+<script>
+document.getElementById("copier").addEventListener("click", function () {
+  var bouton = this, texte = document.getElementById("sha").textContent.trim();
+  function fait() { bouton.textContent = "Copié"; setTimeout(function () { bouton.textContent = "Copier"; }, 1800); }
+  if (navigator.clipboard) { navigator.clipboard.writeText(texte).then(fait, function () {}); }
+});
+</script>
+</body>
+</html>
