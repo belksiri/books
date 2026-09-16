@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://belksiri.github.io/books/data-science-python-pas-a-pas/">
 <meta property="og:title" content="Data science avec Python, pas à pas">
 <meta property="og:description" content="Ressources du lecteur : données, notebooks et fichiers d'exercices.">
-<meta property="og:image" content="https://belksiri.github.io/books/data-science-python-pas-a-pas/couverture/couverture_recto_v1.0.1.png">
+<meta property="og:image" content="https://belksiri.github.io/books/data-science-python-pas-a-pas/couverture/couverture_3d_v1.0.1.png">
 <link rel="icon" href="assets/logo_belksiri.svg" type="image/svg+xml">
 <style>
 @font-face { font-family: "Jakarta"; src: url("assets/PlusJakartaSans-SemiBold.otf") format("opentype"); font-weight: 600; font-display: swap; }
@@ -30,9 +30,14 @@ header.haut .enveloppe { display: flex; align-items: center; justify-content: sp
 .marque img { width: 30px; height: 30px; }
 .haut nav a { color: var(--doux); text-decoration: none; margin-left: 18px; font-size: 15px; }
 .haut nav a:hover { color: var(--bleu); }
-.heros { padding-block: 48px 40px; display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr); gap: 48px; align-items: center; }
+.heros { padding-block: 48px 40px; display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: 40px; align-items: center; }
 .heros img.couv { width: 100%; height: auto; border-radius: 4px;
   box-shadow: 0 1px 2px rgba(20,33,61,.08), 0 18px 40px -12px rgba(20,33,61,.28); }
+/* Maquette 3D : fond transparent et ombre portée déjà dans l'image ; aucun
+   arrondi ni ombre CSS, qui dessineraient un rectangle autour du détourage. */
+.heros img.maquette { width: 100%; height: auto; display: block; }
+.heros .a-plat { margin-top: 10px; font-size: 13px; text-align: center; }
+.heros .a-plat a { color: var(--doux); }
 .surtitre { font-family: Jakarta, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: .08em;
   text-transform: uppercase; color: var(--turquoise); margin: 0 0 10px; }
 h1 { font-family: Jakarta, sans-serif; font-weight: 800; color: var(--encre); font-size: clamp(32px, 5vw, 48px);
@@ -69,6 +74,7 @@ footer { border-top: 1px solid var(--filet); padding-block: 28px; font-size: 14p
 @media (max-width: 760px) {
   .heros { grid-template-columns: 1fr; gap: 28px; padding-block: 28px; }
   .heros img.couv { max-width: 260px; margin: 0 auto; display: block; }
+  .heros img.maquette { max-width: 320px; margin: 0 auto; }
   .grille { grid-template-columns: 1fr; }
   .haut nav { display: none; }
   .bouton { width: 100%; justify-content: center; }
@@ -85,8 +91,11 @@ footer { border-top: 1px solid var(--filet); padding-block: 28px; font-size: 14p
 
 <main class="enveloppe">
   <div class="heros">
-    <img class="couv" src="couverture/couverture_recto_v1.0.1.png" width="1800" height="2700"
-         alt="Couverture du livre Data science avec Python, pas à pas, de Belk Siri">
+    <div>
+      <img class="maquette" src="couverture/couverture_3d_v1.0.1.png" width="1700" height="1900"
+           alt="Le livre Data science avec Python, pas à pas, de Belk Siri, vu de trois quarts : couverture blanche, titre en bleu nuit et turquoise, et illustration de données qui s'organisent en une trajectoire.">
+      <p class="a-plat"><a href="couverture/couverture_recto_v1.0.1.png">Voir la couverture à plat</a></p>
+    </div>
     <div>
       <p class="surtitre">Ressources du lecteur · v1.0.1</p>
       <h1>Data science avec Python, pas à pas</h1>
