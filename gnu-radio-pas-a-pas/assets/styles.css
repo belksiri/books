@@ -1,0 +1,121 @@
+/* Styles propres à la collection « GNU Radio pas à pas ».
+   Isolés dans ce dossier : aucune feuille du portail n'est modifiée, et
+   aucune règle d'ici ne s'applique au livre Data science. */
+:root {
+  --encre: #14213d; --texte: #33415c; --doux: #5c677d; --filet: #dfe3ea;
+  --fond: #ffffff; --fond-2: #f5f7fa; --lien: #1f4e9c;
+  --graphite: #23262a;          /* le haut des couvertures de la collection */
+  --v1: #c2510a;                /* orange du volume 1, assombri pour le contraste */
+  --v2: #0a6b55;                /* vert du volume 2, assombri pour le contraste */
+  --alerte: #8a3b12;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--fond); color: var(--texte);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+.enveloppe { max-width: 1040px; margin: 0 auto; padding-inline: 20px; }
+.saut { position: absolute; left: -9999px; }
+.saut:focus { position: static; display: inline-block; margin: 8px 20px; padding: 8px 14px;
+  background: var(--encre); color: #fff; border-radius: 8px; }
+a { color: var(--lien); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--lien); outline-offset: 2px; }
+
+header.haut { border-bottom: 1px solid var(--filet); }
+header.haut .enveloppe { display: flex; align-items: center; justify-content: space-between;
+  min-height: 64px; gap: 12px; flex-wrap: wrap; }
+.marque { display: flex; align-items: center; gap: 10px; color: var(--encre);
+  text-decoration: none; font-weight: 600; }
+.marque img { width: 30px; height: 30px; }
+.haut nav a { color: var(--doux); text-decoration: none; margin-left: 18px; font-size: 15px; }
+.haut nav a:hover { color: var(--lien); }
+.haut nav a[aria-current="page"] { color: var(--encre); font-weight: 600; }
+
+.heros { padding-block: 44px 36px; }
+.surtitre { font-weight: 600; font-size: 14px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--doux); margin: 0 0 10px; }
+h1 { color: var(--encre); font-size: clamp(30px, 5vw, 44px); line-height: 1.1;
+  letter-spacing: -.02em; margin: 0 0 14px; font-weight: 800; }
+.sous-titre { font-size: 19px; margin: 0 0 12px; max-width: 36em; }
+.auteur { font-weight: 600; color: var(--encre); margin: 0 0 22px; }
+.meta { font-size: 14px; color: var(--doux); margin: 10px 0 0; }
+
+/* Bandeau de volume : c'est la couleur qui distingue les deux tomes,
+   exactement comme sur les couvertures. */
+.bandeau { background: var(--graphite); color: #fff; border-radius: 14px; padding: 26px 24px;
+  margin-bottom: 8px; border-left: 10px solid var(--teinte); }
+.bandeau h1 { color: #fff; }
+.bandeau .surtitre { color: #c9cdd4; }
+.bandeau .sous-titre, .bandeau p { color: #e8eaee; }
+.v1 { --teinte: #fa7b1b; }
+.v2 { --teinte: #2ecfa0; }
+
+.boutons { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 0; }
+.bouton { display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px;
+  border-radius: 10px; font-weight: 600; text-decoration: none; font-size: 16px;
+  border: 2px solid var(--lien); }
+.bouton.plein { background: var(--lien); color: #fff; }
+.bouton.plein:hover { background: #173d7c; border-color: #173d7c; }
+.bouton.vide { color: var(--lien); background: #fff; }
+.bouton.vide:hover { background: #eef3fb; }
+.bandeau .bouton.vide { background: transparent; color: #fff; border-color: #fff; }
+.bandeau .bouton.vide:hover { background: rgba(255,255,255,.12); }
+.bandeau .bouton.plein { background: #fff; color: var(--graphite); border-color: #fff; }
+.bandeau .bouton.plein:hover { background: #e8eaee; border-color: #e8eaee; }
+
+section { padding-block: 34px; border-top: 1px solid var(--filet); }
+h2 { color: var(--encre); font-size: 26px; letter-spacing: -.01em; margin: 0 0 14px; font-weight: 800; }
+h3 { color: var(--encre); font-size: 18px; margin: 0 0 8px; font-weight: 600; }
+.grille { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.grille-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+/* minmax(0, 1fr) plus min-width: 0 : sans les deux, une grille se laisse
+   elargir par son contenu le plus large et fait defiler toute la page. */
+.grille > *, .grille-3 > * { min-width: 0; }
+.carte { background: var(--fond-2); border-radius: 12px; padding: 20px; min-width: 0; }
+.carte h3 { margin-top: 0; }
+a.carte { text-decoration: none; color: inherit; display: block; border: 1px solid var(--filet); }
+a.carte:hover { background: #eef1f6; }
+a.carte .titre { color: var(--encre); font-weight: 600; font-size: 18px; }
+a.carte .detail { color: var(--doux); font-size: 14px; display: block; margin-top: 4px; }
+
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+/* Les commandes sont longues et sans espace : on les laisse revenir a la ligne
+   plutot que d'imposer un defilement horizontal a toute la page sur telephone. */
+pre { background: #0f172a; color: #e2e8f0; border-radius: 8px; padding: 14px 16px;
+  white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0;
+  font: 14px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; margin: 8px 0 0; }
+.empreinte { display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  background: var(--fond-2); border-radius: 10px; padding: 12px 14px; }
+.empreinte code { overflow-wrap: anywhere; font-size: 14px; color: var(--encre); flex: 1 1 280px; }
+.empreinte button { border: 1px solid var(--filet); background: #fff; border-radius: 8px;
+  padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; color: var(--lien); }
+
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+td code { overflow-wrap: anywhere; }
+caption { text-align: left; color: var(--doux); font-size: 14px; padding-bottom: 8px; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--filet); vertical-align: top; }
+th { color: var(--encre); font-weight: 600; background: var(--fond-2); }
+td.n { text-align: right; white-space: nowrap; }
+.tableau { overflow-x: auto; }
+.marque-sdr { color: var(--alerte); font-weight: 600; }
+
+ul.liste { padding-left: 20px; margin: 0; }
+ul.liste li { margin: 5px 0; }
+.note { border-left: 4px solid var(--lien); background: #eef3fb; padding: 14px 16px;
+  border-radius: 0 10px 10px 0; }
+.alerte { border-left: 4px solid var(--alerte); background: #fdf3f0; padding: 14px 16px;
+  border-radius: 0 10px 10px 0; }
+.etat { display: inline-block; font-size: 13px; font-weight: 600; padding: 2px 9px;
+  border-radius: 999px; background: var(--fond-2); color: var(--doux); border: 1px solid var(--filet); }
+.etat.ok { background: #e7f4ee; color: #0a6b55; border-color: #bfe3d4; }
+.etat.partiel { background: #fdf3f0; color: var(--alerte); border-color: #f2d5c9; }
+
+footer { border-top: 1px solid var(--filet); padding-block: 26px; font-size: 14px; color: var(--doux); }
+footer p { margin: 0 0 8px; }
+footer .affiliation { font-style: italic; }
+
+@media (max-width: 760px) {
+  .grille, .grille-3 { grid-template-columns: minmax(0, 1fr); }
+  .haut nav { display: none; }
+  .bouton { width: 100%; justify-content: center; }
+  .heros { padding-block: 26px 22px; }
+}

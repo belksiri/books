@@ -18,6 +18,16 @@ h1 { font-family: Jakarta, sans-serif; font-weight: 800; color: #14213d; font-si
 .livre img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 14px 30px -12px rgba(20,33,61,.3); }
 .livre strong { display: block; color: #14213d; margin-top: 12px; line-height: 1.3; }
 .livre span { font-size: 14px; color: #5c677d; }
+/* Vignette typographique, pour un livre dont la couverture n'est pas publiée.
+   Mêmes proportions qu'une couverture (2:3) et mêmes ombres que .livre img. */
+.tuile { aspect-ratio: 2 / 3; border-radius: 4px; box-shadow: 0 14px 30px -12px rgba(20,33,61,.3);
+  background: #23262a; color: #fff; display: flex; flex-direction: column; justify-content: center;
+  padding: 10% 9%; border-bottom: 14px solid #fa7b1b; }
+.tuile b { font-family: Jakarta, sans-serif; font-weight: 800; font-size: clamp(20px, 3.4vw, 30px);
+  line-height: 1.06; letter-spacing: -.02em; display: block; }
+.tuile i { font-style: normal; font-weight: 800; font-size: clamp(15px, 2.4vw, 21px);
+  color: #fa7b1b; display: block; margin-top: 8px; }
+.tuile em { font-style: normal; font-size: 13px; color: #c9cdd4; display: block; margin-top: 14px; }
 </style>
 </head>
 <body>
@@ -29,6 +39,14 @@ h1 { font-family: Jakarta, sans-serif; font-weight: 800; color: #14213d; font-si
       <img src="data-science-python-pas-a-pas/couverture/couverture_recto_v1.0.1.png" width="1800" height="2700" alt="Couverture de Data science avec Python, pas à pas">
       <strong>Data science avec Python, pas à pas</strong>
       <span>Ressources du lecteur v1.0.1</span>
+    </a>
+    <a class="livre" href="gnu-radio-pas-a-pas/">
+      <div class="tuile" aria-hidden="true">
+        <b>GNU&nbsp;Radio</b><i>pas à pas</i>
+        <em>Volumes 1 et 2</em>
+      </div>
+      <strong>GNU Radio pas à pas</strong>
+      <span>Ressources du lecteur v1.0.0 — deux volumes</span>
     </a>
   </div>
 </main>
