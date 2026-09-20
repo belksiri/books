@@ -1,0 +1,181 @@
+{
+ "collection": "GNU Radio pas à pas",
+ "volume": 2,
+ "titre": "Modulations, communications numériques et RTL-SDR",
+ "chapitres": "CH27 à CH42",
+ "version": "v1.0.0",
+ "date": "2026-09-20",
+ "gnuradio": "3.10.12.0",
+ "radioconda": "2025.03.14",
+ "auteur": "Belk Siri",
+ "licence": "© 2026 Belk Siri. Téléchargement autorisé pour accompagner le livre. Aucune licence de réutilisation ou de redistribution n'est accordée à ce stade.",
+ "nombre_de_fichiers": 16,
+ "octets": 631172,
+ "fichiers": [
+  {
+   "chemin": "flowgraphs/CH34/fg_ch34_001.grc",
+   "chapitre": "CH34",
+   "octets": 3987,
+   "sha256": "f6a793a553713c7242060c1d775ddf66ed9b9cd103bb84ed28b8d0d6e4ebb200",
+   "materiel_sdr": true,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/CH40/fg_ch40_001.grc",
+   "chapitre": "CH40",
+   "octets": 4675,
+   "sha256": "28592d11b5916d4385d0b6a2ec01cb2befc83f23f11c70285d6000044cf305ba",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-11/fg_tp11_001.grc",
+   "chapitre": "CH28",
+   "octets": 9353,
+   "sha256": "0c588cc73b3432a055c1bea788605c21cbe900571357d7bb7068b4e51dba5181",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-12/book-audio.wav",
+   "chapitre": "CH25",
+   "octets": 529244,
+   "sha256": "9aa61af4cac297464bd71cc06c4b5476f34dd7173685af60560568c3a78c4848",
+   "materiel_sdr": false,
+   "produit_du_son": true,
+   "commun_aux_volumes": true,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-12/fg_tp12_001.grc",
+   "chapitre": "CH29",
+   "octets": 8303,
+   "sha256": "274d444d8e643c5f210b1f409a2c669f302811f679be148a73524fe27d3f7cb9",
+   "materiel_sdr": false,
+   "produit_du_son": true,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-12/fg_tp12_002.grc",
+   "chapitre": "CH29",
+   "octets": 6200,
+   "sha256": "40ed93386fcfd8862ced3f88c06eb585199bf5166266c2bd74d21b7a95f48483",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-13/fg_tp13_001.grc",
+   "chapitre": "CH30",
+   "octets": 7620,
+   "sha256": "62793dff7186209c2c56f9278db44af2c8be6c979204cd3a0d6cd5e15c88c2b0",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-13/fg_tp13_002.grc",
+   "chapitre": "CH30",
+   "octets": 7557,
+   "sha256": "1afcfc29fb0baf586ca164ebaf34c1339352158e6e504a6b91c0e8313e8afcb7",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-14/fg_tp14_001.grc",
+   "chapitre": "CH31",
+   "octets": 8174,
+   "sha256": "484d468e1f44dbb10c2eafd7b2da73ec573220119ba2b1aa1916fdfcc2c44f15",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-15/fg_tp15_001.grc",
+   "chapitre": "CH32",
+   "octets": 9571,
+   "sha256": "4f37ee5e7f5f9c9dba79ef3e95a6e82023e1d86186efee6f8d562d99578d8a90",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-15/fg_tp15_002.grc",
+   "chapitre": "CH32",
+   "octets": 9729,
+   "sha256": "bfc233238f79a48e633d77795c3563a17292aded5707f062f4eb3543d9313096",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-16/fg_tp16_001.grc",
+   "chapitre": "CH35",
+   "octets": 5464,
+   "sha256": "f3336c3ddea65cc64012333b12de547d2ecda29d5522a4144b0bc805a649fad0",
+   "materiel_sdr": true,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-17/fg_tp17_001.grc",
+   "chapitre": "CH36",
+   "octets": 6305,
+   "sha256": "2f009793c339351e5673c694585b107ff491098a05afd567ca57d85463bbdeec",
+   "materiel_sdr": true,
+   "produit_du_son": true,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-17/fg_tp17_002.grc",
+   "chapitre": "CH36",
+   "octets": 6421,
+   "sha256": "bddfccc0ab1f4f2825152fb3b9102797571ecc18bf49f8e5edf5d32ca5c7841a",
+   "materiel_sdr": true,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-18/fg_tp18_001.grc",
+   "chapitre": "CH37",
+   "octets": 3898,
+   "sha256": "11f6183704fecb7b9a3cecf23d2a79d62db031f0b963910d22a699f476a6b479",
+   "materiel_sdr": true,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  },
+  {
+   "chemin": "flowgraphs/TP-18/fg_tp18_002.grc",
+   "chapitre": "CH37",
+   "octets": 4671,
+   "sha256": "522a1644aa1d69bbbd89627eb95b738ed10d5af82db9c92f84ef92e2cfe1ea5b",
+   "materiel_sdr": false,
+   "produit_du_son": false,
+   "commun_aux_volumes": false,
+   "commun_aux_langues": true
+  }
+ ],
+ "archive": {
+  "nom": "gnu-radio-pas-a-pas-volume-2-resources.zip",
+  "octets": 77004,
+  "sha256": "f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90"
+ }
+}
