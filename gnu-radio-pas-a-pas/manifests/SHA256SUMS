@@ -1,7 +1,8 @@
-# GNU Radio pas a pas — empreintes SHA-256 — v1.0.0, 2026-09-20
+# GNU Radio pas a pas — empreintes SHA-256
+# volume 1 : v1.0.0, 2026-09-20 — volume 2 : v1.0.1, 2026-09-21
 # Archives
 1404c04535879b422eb6fe1c0e9ff7965c2f83f7a2b5ea03bc19dd08da5b4072  downloads/gnu-radio-pas-a-pas-volume-1-resources.zip
-f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90  downloads/gnu-radio-pas-a-pas-volume-2-resources.zip
+d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7  downloads/gnu-radio-pas-a-pas-volume-2-resources.zip
 # Fichiers publies
 55cc096eae0ade3bc84a8046225ed58aa9cde2983afdd0338789020756f8e062  resources/volume-1/flowgraphs/CH02/fg_ch02_001.grc
 567c396af115f9c04a288f31f8569d1d850d5397abb04e9f5a33ade69a8578e4  resources/volume-1/flowgraphs/CH11/fg_ch11_001.grc

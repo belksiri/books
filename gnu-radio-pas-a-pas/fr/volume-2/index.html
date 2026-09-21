@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GNU Radio pas à pas, volume 2 — ressources du lecteur</title>
-<meta name="description" content="Ressources du volume 2 de GNU Radio pas à pas, de Belk Siri : montages .grc des chapitres CH27 à CH42 et fichier son, pour GNU Radio 3.10.12.0.">
+<meta name="description" content="Ressources du volume 2 de GNU Radio pas à pas, de Belk Siri : montages .grc des chapitres 1 à 16 et fichier son, pour GNU Radio 3.10.12.0.">
 <link rel="canonical" href="https://belksiri.github.io/books/gnu-radio-pas-a-pas/fr/volume-2/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GNU Radio pas à pas, volume 2 — ressources du lecteur">
-<meta property="og:description" content="Ressources du volume 2 de GNU Radio pas à pas, de Belk Siri : montages .grc des chapitres CH27 à CH42 et fichier son, pour GNU Radio 3.10.12.0.">
+<meta property="og:description" content="Ressources du volume 2 de GNU Radio pas à pas, de Belk Siri : montages .grc des chapitres 1 à 16 et fichier son, pour GNU Radio 3.10.12.0.">
 <meta property="og:url" content="https://belksiri.github.io/books/gnu-radio-pas-a-pas/fr/volume-2/">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="../../assets/logo_belksiri.svg" type="image/svg+xml">
@@ -41,9 +41,9 @@ document.addEventListener("click", function (ev) {
 <main id="contenu" class="enveloppe">
   <div class="heros">
     <div class="bandeau v2">
-      <p class="surtitre">Ressources du lecteur · v1.0.0 · Volume 2</p>
+      <p class="surtitre">Ressources du lecteur · v1.0.1 · Volume 2</p>
       <h1>Modulations, communications numériques et RTL-SDR</h1>
-      <p class="sous-titre">GNU Radio pas à pas, volume 2 — chapitres CH27 à CH42</p>
+      <p class="sous-titre">GNU Radio pas à pas, volume 2 — chapitres 1 à 16</p>
       <p>16 fichiers : les montages d'exemple des chapitres, les montages des travaux
       pratiques, et le fichier son qu'ils emploient. Tout est prêt à ouvrir dans GNU Radio
       Companion 3.10.12.0.</p>
@@ -51,8 +51,8 @@ document.addEventListener("click", function (ev) {
         <a class="bouton plein" href="../../downloads/gnu-radio-pas-a-pas-volume-2-resources.zip" download>Télécharger l'archive du volume 2</a>
         <a class="bouton vide" href="../volume-1/">Aller au volume 1</a>
       </div>
-      <p class="meta" style="color:#c9cdd4">gnu-radio-pas-a-pas-volume-2-resources.zip · 75 Ko · 18 entrées ·
-      version v1.0.0 du 20 septembre 2026</p>
+      <p class="meta" style="color:#c9cdd4">gnu-radio-pas-a-pas-volume-2-resources.zip · 77 Ko · 18 entrées ·
+      version v1.0.1 du 21 septembre 2026</p>
     </div>
   </div>
 
@@ -60,7 +60,7 @@ document.addEventListener("click", function (ev) {
     <h2 id="t-verif">Vérifier le téléchargement</h2>
     <p>L'empreinte SHA-256 de l'archive doit être exactement :</p>
     <div class="empreinte">
-      <code id="sha2">f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90</code>
+      <code id="sha2">d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7</code>
       <button type="button" data-copie="sha2">Copier</button>
     </div>
     <p>Comparez-la à celle du fichier reçu :</p>
@@ -92,7 +92,7 @@ document.addEventListener("click", function (ev) {
         <ul class="liste">
           <li>un ordinateur macOS ou Windows ;</li>
           <li>une carte son pour les montages qui produisent du son ;</li>
-          <li>un <strong>récepteur RTL-SDR</strong> et une antenne pour les chapitres CH34, CH35, CH36, CH37</li>
+          <li>un <strong>récepteur RTL-SDR</strong> et une antenne pour les chapitres 8, 9, 10 et 11</li>
         </ul>
       </div>
     </div>
@@ -134,7 +134,7 @@ document.addEventListener("click", function (ev) {
       <tbody>
         <tr><th scope="row">macOS 26.6.2, Apple Silicon</th><td><span class="etat ok">vérifié</span></td><td>Système de référence du livre. Chargement des définitions de blocs, ouverture des montages, génération et exécution vérifiés. Sortie audio vérifiée avec écoute confirmée : un ton de 440 Hz pendant 3 secondes.</td></tr>
         <tr><th scope="row">Windows 11 Pro 25H2</th><td><span class="etat partiel">partiellement vérifié</span></td><td>Le 18 septembre 2026 : installeur contrôlé, Radioconda isolé, GRC lancé, trois montages sans matériel exécutés — 39 points sur 39. N’ont pas été essayés : l’assistant graphique d’installation, l’invite « radioconda Prompt », la sortie audio, et tout matériel radio, donc le pilote WinUSB installé avec Zadig.</td></tr>
-        <tr><th scope="row">Récepteur RTL-SDR</th><td><span class="etat partiel">vérifié sur un autre modèle</span></td><td>Les mesures des chapitres 34 à 37 ont été faites avec un boîtier RTL2832U à tuner R820T réellement branché, antenne raccordée, émissions réellement reçues. Le RTL-SDR Blog V3, modèle de référence du livre, n’a pas été essayé. Aucune écoute n’a été validée pendant ces séances : aucun son n’y a été produit ni entendu.</td></tr>
+        <tr><th scope="row">Récepteur RTL-SDR</th><td><span class="etat partiel">vérifié sur un autre modèle</span></td><td>Les mesures des chapitres 8 à 11 ont été faites avec un boîtier RTL2832U à tuner R820T réellement branché, antenne raccordée, émissions réellement reçues. Le RTL-SDR Blog V3, modèle de référence du livre, n’a pas été essayé. Aucune écoute n’a été validée pendant ces séances : aucun son n’y a été produit ni entendu.</td></tr>
       </tbody>
     </table>
     </div>
@@ -144,9 +144,9 @@ document.addEventListener("click", function (ev) {
   <section aria-labelledby="t-sdr">
     <h2 id="t-sdr">Chapitres qui demandent un récepteur</h2>
     <p>5 montages de ce volume exigent un récepteur RTL-SDR réellement branché :
-    ils appartiennent aux chapitres CH34, CH35, CH36, CH37. <strong>Tous les autres fonctionnent en
+    ils appartiennent aux chapitres 8, 9, 10 et 11. <strong>Tous les autres fonctionnent en
     simulation</strong>, sans aucun matériel radio.</p>
-    <p class="alerte"><strong>Ce qui n'a pas été essayé.</strong> Les mesures des chapitres 34 à 37 ont été faites avec un boîtier RTL2832U à tuner R820T réellement branché, antenne raccordée, émissions réellement reçues. Le RTL-SDR Blog V3, modèle de référence du livre, n’a pas été essayé. Aucune écoute n’a été validée pendant ces séances : aucun son n’y a été produit ni entendu.</p>
+    <p class="alerte"><strong>Ce qui n'a pas été essayé.</strong> Les mesures des chapitres 8 à 11 ont été faites avec un boîtier RTL2832U à tuner R820T réellement branché, antenne raccordée, émissions réellement reçues. Le RTL-SDR Blog V3, modèle de référence du livre, n’a pas été essayé. Aucune écoute n’a été validée pendant ces séances : aucun son n’y a été produit ni entendu.</p>
   </section>
 
   <section aria-labelledby="t-inventaire">
@@ -158,25 +158,26 @@ document.addEventListener("click", function (ev) {
       <thead><tr><th scope="col">Chapitre</th><th scope="col">Fichier</th>
       <th scope="col">Rôle</th><th scope="col">Octets</th><th scope="col"></th></tr></thead>
       <tbody>
-      <tr><th scope="rowgroup" rowspan="1">CH25</th><td><code>flowgraphs/TP-12/book-audio.wav</code></td><td>son</td><td class="n">529 244</td><td class="n"><a href="../../resources/common/audio/book-audio.wav">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="1">CH28</th><td><code>flowgraphs/TP-11/fg_tp11_001.grc</code></td><td>travail pratique</td><td class="n">9 353</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-11/fg_tp11_001.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="2">CH29</th><td><code>flowgraphs/TP-12/fg_tp12_001.grc</code></td><td>son</td><td class="n">8 303</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-12/fg_tp12_001.grc">voir</a></td></tr>
-      <tr><td><code>flowgraphs/TP-12/fg_tp12_002.grc</code></td><td>travail pratique</td><td class="n">6 200</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-12/fg_tp12_002.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="2">CH30</th><td><code>flowgraphs/TP-13/fg_tp13_001.grc</code></td><td>travail pratique</td><td class="n">7 620</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-13/fg_tp13_001.grc">voir</a></td></tr>
-      <tr><td><code>flowgraphs/TP-13/fg_tp13_002.grc</code></td><td>travail pratique</td><td class="n">7 557</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-13/fg_tp13_002.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="1">CH31</th><td><code>flowgraphs/TP-14/fg_tp14_001.grc</code></td><td>travail pratique</td><td class="n">8 174</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-14/fg_tp14_001.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="2">CH32</th><td><code>flowgraphs/TP-15/fg_tp15_001.grc</code></td><td>travail pratique</td><td class="n">9 571</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-15/fg_tp15_001.grc">voir</a></td></tr>
-      <tr><td><code>flowgraphs/TP-15/fg_tp15_002.grc</code></td><td>travail pratique</td><td class="n">9 729</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-15/fg_tp15_002.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="1">CH34</th><td><code>flowgraphs/CH34/fg_ch34_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">3 987</td><td class="n"><a href="../../resources/volume-2/flowgraphs/CH34/fg_ch34_001.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="1">CH35</th><td><code>flowgraphs/TP-16/fg_tp16_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">5 464</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-16/fg_tp16_001.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="2">CH36</th><td><code>flowgraphs/TP-17/fg_tp17_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span> · son</td><td class="n">6 305</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-17/fg_tp17_001.grc">voir</a></td></tr>
-      <tr><td><code>flowgraphs/TP-17/fg_tp17_002.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">6 421</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-17/fg_tp17_002.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="2">CH37</th><td><code>flowgraphs/TP-18/fg_tp18_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">3 898</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-18/fg_tp18_001.grc">voir</a></td></tr>
-      <tr><td><code>flowgraphs/TP-18/fg_tp18_002.grc</code></td><td>travail pratique</td><td class="n">4 671</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-18/fg_tp18_002.grc">voir</a></td></tr>
-      <tr><th scope="rowgroup" rowspan="1">CH40</th><td><code>flowgraphs/CH40/fg_ch40_001.grc</code></td><td>montage d’exemple du chapitre</td><td class="n">4 675</td><td class="n"><a href="../../resources/volume-2/flowgraphs/CH40/fg_ch40_001.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">2</th><td><code>flowgraphs/TP-11/fg_tp11_001.grc</code></td><td>travail pratique</td><td class="n">9&nbsp;353</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-11/fg_tp11_001.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="3">3</th><td><code>flowgraphs/TP-12/book-audio.wav</code></td><td>son · fichier commun au volume&nbsp;1</td><td class="n">529&nbsp;244</td><td class="n"><a href="../../resources/common/audio/book-audio.wav">voir</a></td></tr>
+      <tr><td><code>flowgraphs/TP-12/fg_tp12_001.grc</code></td><td>son</td><td class="n">8&nbsp;303</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-12/fg_tp12_001.grc">voir</a></td></tr>
+      <tr><td><code>flowgraphs/TP-12/fg_tp12_002.grc</code></td><td>travail pratique</td><td class="n">6&nbsp;200</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-12/fg_tp12_002.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">4</th><td><code>flowgraphs/TP-13/fg_tp13_001.grc</code></td><td>travail pratique</td><td class="n">7&nbsp;620</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-13/fg_tp13_001.grc">voir</a></td></tr>
+      <tr><td><code>flowgraphs/TP-13/fg_tp13_002.grc</code></td><td>travail pratique</td><td class="n">7&nbsp;557</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-13/fg_tp13_002.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">5</th><td><code>flowgraphs/TP-14/fg_tp14_001.grc</code></td><td>travail pratique</td><td class="n">8&nbsp;174</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-14/fg_tp14_001.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">6</th><td><code>flowgraphs/TP-15/fg_tp15_001.grc</code></td><td>travail pratique</td><td class="n">9&nbsp;571</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-15/fg_tp15_001.grc">voir</a></td></tr>
+      <tr><td><code>flowgraphs/TP-15/fg_tp15_002.grc</code></td><td>travail pratique</td><td class="n">9&nbsp;729</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-15/fg_tp15_002.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">8</th><td><code>flowgraphs/CH34/fg_ch34_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">3&nbsp;987</td><td class="n"><a href="../../resources/volume-2/flowgraphs/CH34/fg_ch34_001.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">9</th><td><code>flowgraphs/TP-16/fg_tp16_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">5&nbsp;464</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-16/fg_tp16_001.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">10</th><td><code>flowgraphs/TP-17/fg_tp17_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span> · son</td><td class="n">6&nbsp;305</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-17/fg_tp17_001.grc">voir</a></td></tr>
+      <tr><td><code>flowgraphs/TP-17/fg_tp17_002.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">6&nbsp;421</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-17/fg_tp17_002.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">11</th><td><code>flowgraphs/TP-18/fg_tp18_001.grc</code></td><td><span class="marque-sdr">RTL-SDR requis</span></td><td class="n">3&nbsp;898</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-18/fg_tp18_001.grc">voir</a></td></tr>
+      <tr><td><code>flowgraphs/TP-18/fg_tp18_002.grc</code></td><td>travail pratique</td><td class="n">4&nbsp;671</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-18/fg_tp18_002.grc">voir</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">14</th><td><code>flowgraphs/CH40/fg_ch40_001.grc</code></td><td>montage d’exemple du chapitre</td><td class="n">4&nbsp;675</td><td class="n"><a href="../../resources/volume-2/flowgraphs/CH40/fg_ch40_001.grc">voir</a></td></tr>
       </tbody>
     </table>
     </div>
+      <p class="note-identifiants" style="color:#8f97a3;font-size:.88em">Les chapitres du volume 2 sont numérotés 1 à 16. Les dossiers et les noms de fichiers portent l’identifiant technique interne du chapitre (<code>CH27</code> à <code>CH42</code>), conservé pour assurer la compatibilité des fichiers d’une édition à l’autre. La correspondance complète est donnée dans le <code>README.txt</code> de l’archive.</p>
   </section>
 
   <section aria-labelledby="t-suite">
@@ -184,7 +185,7 @@ document.addEventListener("click", function (ev) {
     <div class="grille">
       <a class="carte" href="../volume-1/">
         <span class="titre">Volume 1 — Fondamentaux, GNU Radio Companion et traitement du signal</span>
-        <span class="detail">Chapitres CH01 à CH26 · 34 fichiers · 99 Ko</span></a>
+        <span class="detail">Chapitres 1 à 26 · 34 fichiers · 99 Ko</span></a>
       <a class="carte" href="../corrections/">
         <span class="titre">Corrections et mises à jour</span>
         <span class="detail">Ce qui a changé depuis la première publication</span></a>
@@ -194,7 +195,7 @@ document.addEventListener("click", function (ev) {
 </main>
 <footer>
   <div class="enveloppe">
-    <p><strong>GNU Radio pas à pas</strong> — Belk Siri. Ressources du lecteur v1.0.0, 20 septembre 2026.</p>
+    <p><strong>GNU Radio pas à pas</strong> — Belk Siri. Ressources du lecteur v1.0.1, 21 septembre 2026.</p>
     <p>© 2026 Belk Siri. Téléchargement autorisé pour accompagner le livre ; aucune licence de
     réutilisation ou de redistribution n'est accordée à ce stade.</p>
     <p class="affiliation">GNU Radio est cité comme le logiciel étudié dans cet ouvrage. Cette publication indépendante n’est ni éditée, ni parrainée, ni approuvée par le projet GNU Radio ou par la Free Software Foundation.</p>
