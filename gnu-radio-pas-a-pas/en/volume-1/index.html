@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GNU Radio Step by Step, Volume 1 — reader resources</title>
+<meta name="description" content="Resources for Volume 1 of GNU Radio Step by Step, by Belk Siri: the .grc flowgraphs of Chapters 1 to 26 and the audio file, for GNU Radio 3.10.12.0.">
+<link rel="canonical" href="https://belksiri.github.io/books/gnu-radio-pas-a-pas/en/volume-1/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GNU Radio Step by Step, Volume 1 — reader resources">
+<meta property="og:description" content="Resources for Volume 1 of GNU Radio Step by Step, by Belk Siri: the .grc flowgraphs of Chapters 1 to 26 and the audio file, for GNU Radio 3.10.12.0.">
+<meta property="og:url" content="https://belksiri.github.io/books/gnu-radio-pas-a-pas/en/volume-1/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/logo_belksiri.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/styles.css">
+<script>
+document.addEventListener("click", function (ev) {
+  var b = ev.target.closest("[data-copie]");
+  if (!b) return;
+  var n = document.getElementById(b.getAttribute("data-copie"));
+  if (!n || !navigator.clipboard) return;
+  navigator.clipboard.writeText(n.textContent.trim()).then(function () {
+    b.textContent = "Copied";
+    setTimeout(function () { b.textContent = "Copy"; }, 1800);
+  }, function () {});
+});
+</script>
+</head>
+<body>
+<a class="saut" href="#contenu">Skip to content</a>
+<header class="haut">
+  <div class="enveloppe">
+    <a class="marque" href="../../../"><img src="../../assets/logo_belksiri.svg" alt="" width="30" height="30">Belk Siri</a>
+    <nav aria-label="Series">
+      <a href="../../en/">English edition</a>
+      <a href="../../en/volume-1/" aria-current="page">Volume 1</a>
+      <a href="../../en/volume-2/">Volume 2</a>
+      <a href="../../en/corrections/">Corrections</a>
+      <a href="../../">French edition</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu" class="enveloppe">
+  <div class="heros">
+    <div class="bandeau v1">
+      <p class="surtitre">Reader resources · v1.0.0 · Volume 1</p>
+      <h1>Fundamentals, GNU Radio Companion, and Signal Processing</h1>
+      <p class="sous-titre">GNU Radio Step by Step, Volume 1 — Chapters 1 to 26</p>
+      <p>34 files: the example flowgraphs of the chapters, the
+      flowgraphs of the hands-on exercises, and the audio file they use. Everything is ready
+      to open in GNU Radio Companion 3.10.12.0.</p>
+      <div class="boutons">
+        <a class="bouton plein" href="../../downloads/gnu-radio-pas-a-pas-volume-1-resources.zip" download>Download the Volume 1 archive</a>
+        <a class="bouton vide" href="../corrections/">Corrections and updates</a>
+      </div>
+      <p class="meta" style="color:#c9cdd4">gnu-radio-pas-a-pas-volume-1-resources.zip ·
+      101,214 bytes · 36 entries · version v1.0.0 of September 20, 2026</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="t-shared">
+    <h2 id="t-shared">One archive for every edition</h2>
+    <p>The resources are <strong>shared by all editions of the book</strong>. A
+    <code>.grc</code> file holds official GNU Radio block names, numbers and identifiers —
+    nothing that needs translating. The English edition therefore downloads exactly the same
+    archive as the French one, and the file names do not change.</p>
+    <p class="meta">This is why the archive is still called
+    <code>gnu-radio-pas-a-pas-volume-1-resources.zip</code>: renaming it would break the
+    checksums printed in the French edition, which is already published. For the same
+    reason the <code>README.txt</code> inside it is in French; the same text in English is
+    <a href="../README-volume-1.txt">README-volume-1.txt</a>.</p>
+  </section>
+
+  <section aria-labelledby="t-verify">
+    <h2 id="t-verify">Verify your download</h2>
+    <p>The SHA-256 checksum of the archive must be exactly:</p>
+    <div class="empreinte">
+      <code id="sha1">1404c04535879b422eb6fe1c0e9ff7965c2f83f7a2b5ea03bc19dd08da5b4072</code>
+      <button type="button" data-copie="sha1">Copy</button>
+    </div>
+    <p>Compare it with the one computed on the file you received:</p>
+    <div class="grille">
+      <div class="carte"><h3>macOS or Linux</h3>
+        <pre>shasum -a 256 gnu-radio-pas-a-pas-volume-1-resources.zip</pre></div>
+      <div class="carte"><h3>Windows (PowerShell)</h3>
+        <pre>Get-FileHash gnu-radio-pas-a-pas-volume-1-resources.zip -Algorithm SHA256</pre></div>
+    </div>
+    <p class="meta">The checksums of every file, one by one, are in
+    <a href="../../manifests/volume-1-files-en.json">the volume manifest</a> and in
+    <a href="../../manifests/SHA256SUMS">SHA256SUMS</a>.</p>
+  </section>
+
+  <section aria-labelledby="t-need">
+    <h2 id="t-need">What you need</h2>
+    <div class="grille">
+      <div class="carte">
+        <h3>Software</h3>
+        <ul class="liste">
+          <li><strong>GNU Radio 3.10.12.0</strong>, or a more recent version of the 3.10 series;</li>
+          <li>installed preferably by <strong>Radioconda 2025.03.14</strong>;</li>
+          <li>a version earlier than 3.8 will not be able to read these files: the format
+          changed between 3.7 and 3.8.</li>
+        </ul>
+      </div>
+      <div class="carte">
+        <h3>Hardware</h3>
+        <ul class="liste">
+          <li>a macOS or Windows computer;</li>
+          <li>a sound card for the flowgraphs that produce sound;</li>
+          <li>no radio receiver: this volume is entirely in simulation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-use">
+    <h2 id="t-use">Using the files</h2>
+    <ol class="liste">
+      <li>Unzip the archive into your working folder.</li>
+      <li><strong>Copy the whole folder</strong> of the chapter or the hands-on exercise into
+      your own <code>flowgraphs/</code> folder, then work on the copy. The exercises will have
+      you change values; the original lets you go back to the starting point without
+      downloading again.</li>
+      <li>Open the <code>.grc</code> file in GNU Radio Companion: menu <code>File</code>, then
+      <code>Open</code>.</li>
+      <li><code>F5</code> generates the program, <code>F6</code> runs it, <code>F7</code> stops it.</li>
+    </ol>
+    <p class="note" style="margin-top:16px"><strong>Copy the folder, not just the
+    <code>.grc</code> file.</strong> The flowgraphs that read <code>book-audio.wav</code> name
+    it by itself, so in the current folder. The audio file sits next to them for that reason.</p>
+    <p style="margin-top:14px">The Python program that GRC writes next to the <code>.grc</code>
+    file is rebuilt at every generation. It is not provided here, and there is never any
+    reason to edit it or to save it.</p>
+    <p class="alerte" style="margin-top:14px"><strong>Two files are not provided, because you
+    are the one who produces them:</strong> <code>echantillons.iq</code>, written by the
+    flowgraph of Exercise 8, and the <code>.cfile</code> of real samples recorded in
+    Exercise 18.</p>
+  </section>
+
+  <section aria-labelledby="t-systems">
+    <h2 id="t-systems">macOS and Windows</h2>
+    <p>The files are the same on both systems: they are text files, independent of the
+    platform. What differs is what was verified.</p>
+    <div class="tableau">
+    <table>
+      <thead><tr><th scope="col">System</th><th scope="col">Status</th>
+      <th scope="col">What was actually done</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">macOS 26.6.2, Apple Silicon</th><td><span class="etat ok">verified</span></td><td>Reference system of the book. Loading of the block definitions, opening of the flowgraphs, generation and execution verified. Audio output verified with a confirmed listening test: a 440 Hz tone for 3 seconds.</td></tr>
+        <tr><th scope="row">Windows 11 Pro 25H2</th><td><span class="etat partiel">partially verified</span></td><td>On September 18, 2026: installer checked, Radioconda isolated, GRC launched, three flowgraphs run without hardware — 39 points out of 39. Not tried: the graphical installation wizard, the “radioconda Prompt”, audio output, and any radio hardware, therefore the WinUSB driver installed with Zadig.</td></tr>
+        <tr><th scope="row">RTL-SDR receiver</th><td><span class="etat partiel">verified on a different model</span></td><td>The measurements of Chapters 8 to 11 of Volume 2 were made with an RTL2832U dongle and an R820T tuner actually plugged in, antenna connected, real transmissions actually received. The RTL-SDR Blog V3, the reference model of the book, was not tried. No listening test was validated during those sessions: no sound was produced or heard.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="meta">What is not written in this table was not verified.</p>
+  </section>
+
+  <section aria-labelledby="t-sdr">
+    <h2 id="t-sdr">Chapters that need a receiver</h2>
+    <p><strong>No flowgraph in this volume requires a radio receiver.</strong> Everything runs
+    in simulation. A sound card is enough for the flowgraphs that produce sound; the receiver
+    only comes into play in Volume 2.</p>
+  </section>
+
+  <section aria-labelledby="t-inventory">
+    <h2 id="t-inventory">Resource inventory, chapter by chapter</h2>
+    <div class="tableau">
+    <table>
+      <caption>34 files, 718,067 bytes in total. The SHA-256
+      checksum of each one is in
+      <a href="../../manifests/volume-1-files-en.json">volume-1-files-en.json</a>.</caption>
+      <thead><tr><th scope="col">Chapter</th><th scope="col">File</th>
+      <th scope="col">Role</th><th scope="col">Bytes</th><th scope="col"></th></tr></thead>
+      <tbody>
+      <tr><th scope="rowgroup" rowspan="1">2</th><td><code>flowgraphs/CH02/fg_ch02_001.grc</code></td><td>sound</td><td class="n">3,746</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH02/fg_ch02_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">11</th><td><code>flowgraphs/CH11/fg_ch11_001.grc</code></td><td>chapter example flowgraph</td><td class="n">4,203</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH11/fg_ch11_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">12</th><td><code>flowgraphs/CH12/fg_ch12_001.grc</code></td><td>chapter example flowgraph</td><td class="n">6,569</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH12/fg_ch12_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">13</th><td><code>flowgraphs/TP-01/fg_tp01_001.grc</code></td><td>hands-on exercise</td><td class="n">4,294</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-01/fg_tp01_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-02/fg_tp02_001.grc</code></td><td>hands-on exercise</td><td class="n">5,107</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-02/fg_tp02_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">14</th><td><code>flowgraphs/CH14/fg_ch14_001.grc</code></td><td>chapter example flowgraph</td><td class="n">3,423</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH14/fg_ch14_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH14/fg_ch14_002.grc</code></td><td>sound</td><td class="n">2,603</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH14/fg_ch14_002.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">15</th><td><code>flowgraphs/CH15/fg_ch15_001.grc</code></td><td>chapter example flowgraph</td><td class="n">3,192</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH15/fg_ch15_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="3">16</th><td><code>flowgraphs/CH16/fg_ch16_001.grc</code></td><td>chapter example flowgraph</td><td class="n">12,610</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH16/fg_ch16_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH16/fg_ch16_002.grc</code></td><td>chapter example flowgraph</td><td class="n">6,929</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH16/fg_ch16_002.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH16/fg_ch16_003.grc</code></td><td>chapter example flowgraph</td><td class="n">5,923</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH16/fg_ch16_003.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">17</th><td><code>flowgraphs/CH17/fg_ch17_001.grc</code></td><td>chapter example flowgraph</td><td class="n">3,829</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH17/fg_ch17_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH17/fg_ch17_002.grc</code></td><td>chapter example flowgraph</td><td class="n">5,037</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH17/fg_ch17_002.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">18</th><td><code>flowgraphs/CH18/fg_ch18_001.grc</code></td><td>chapter example flowgraph</td><td class="n">4,929</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH18/fg_ch18_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH18/fg_ch18_002.grc</code></td><td>chapter example flowgraph</td><td class="n">3,805</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH18/fg_ch18_002.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">20</th><td><code>flowgraphs/CH20/fg_ch20_001.grc</code></td><td>chapter example flowgraph</td><td class="n">7,269</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH20/fg_ch20_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH20/fg_ch20_002.grc</code></td><td>chapter example flowgraph</td><td class="n">6,419</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH20/fg_ch20_002.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">21</th><td><code>flowgraphs/CH21/fg_ch21_001.grc</code></td><td>chapter example flowgraph</td><td class="n">6,001</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH21/fg_ch21_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">22</th><td><code>flowgraphs/CH22/fg_ch22_001.grc</code></td><td>chapter example flowgraph</td><td class="n">4,697</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH22/fg_ch22_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/CH22/fg_ch22_002.grc</code></td><td>chapter example flowgraph</td><td class="n">6,323</td><td class="n"><a href="../../resources/volume-1/flowgraphs/CH22/fg_ch22_002.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="5">23</th><td><code>flowgraphs/TP-03/fg_tp03_001.grc</code></td><td>hands-on exercise</td><td class="n">8,806</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-03/fg_tp03_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-03/fg_tp03_002.grc</code></td><td>hands-on exercise</td><td class="n">8,819</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-03/fg_tp03_002.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-04/fg_tp04_001.grc</code></td><td>hands-on exercise</td><td class="n">3,950</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-04/fg_tp04_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-04/fg_tp04_002.grc</code></td><td>hands-on exercise</td><td class="n">6,977</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-04/fg_tp04_002.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-05/fg_tp05_001.grc</code></td><td>hands-on exercise</td><td class="n">6,633</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-05/fg_tp05_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">24</th><td><code>flowgraphs/TP-06/fg_tp06_001.grc</code></td><td>hands-on exercise</td><td class="n">6,099</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-06/fg_tp06_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-07/fg_tp07_001.grc</code></td><td>hands-on exercise</td><td class="n">7,413</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-07/fg_tp07_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="5">25</th><td><code>flowgraphs/TP-08/fg_tp08_001.grc</code></td><td>hands-on exercise</td><td class="n">2,644</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-08/fg_tp08_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-08/fg_tp08_002.grc</code></td><td>hands-on exercise</td><td class="n">5,364</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-08/fg_tp08_002.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-08/fg_tp08_003.grc</code></td><td>hands-on exercise</td><td class="n">5,369</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-08/fg_tp08_003.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-09/book-audio.wav</code></td><td>audio file</td><td class="n">529,244</td><td class="n"><a href="../../resources/common/audio/book-audio.wav">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-09/fg_tp09_001.grc</code></td><td>hands-on exercise</td><td class="n">6,845</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-09/fg_tp09_001.grc">view</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">26</th><td><code>flowgraphs/TP-10/fg_tp10_001.grc</code></td><td>hands-on exercise</td><td class="n">6,604</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-10/fg_tp10_001.grc">view</a></td></tr>
+      <tr><td><code>flowgraphs/TP-10/fg_tp10_002.grc</code></td><td>hands-on exercise</td><td class="n">6,392</td><td class="n"><a href="../../resources/volume-1/flowgraphs/TP-10/fg_tp10_002.grc">view</a></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="meta">The folder names <code>TP-01</code> to <code>TP-18</code> are the stable
+    identifiers of the hands-on exercises, shared by every edition. In the English text they
+    are called <strong>Exercise 1</strong> to <strong>Exercise 18</strong>; the folders keep
+    their names so that a single archive serves every language.</p>
+  </section>
+
+  <section aria-labelledby="t-next">
+    <h2 id="t-next">What comes next</h2>
+    <div class="grille">
+      <a class="carte" href="../corrections/">
+        <span class="titre">Corrections and updates</span>
+        <span class="detail">What has changed since first publication</span></a>
+      <a class="carte" href="../volume-2/">
+        <span class="titre">Volume 2 — Modulation, Digital Communications, and RTL-SDR</span>
+        <span class="detail">16 chapters, Chapter 1 to Chapter 16 · resources available ·
+        16 files</span></a>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="enveloppe">
+    <p><strong>GNU Radio Step by Step</strong> — Belk Siri. Reader resources v1.0.0, September 20, 2026.</p>
+    <p>© 2026 Belk Siri. Downloading is permitted to accompany the book; no license to reuse
+    or redistribute is granted at this stage.</p>
+    <p class="affiliation">GNU Radio is cited as the software studied in this book. This independent
+    publication is not published, sponsored or endorsed by the GNU Radio project or by the
+    Free Software Foundation.</p>
+    <p><a href="../../../">All books by Belk Siri</a> ·
+       <a href="https://github.com/belksiri/books/tree/main/gnu-radio-pas-a-pas">GitHub repository</a></p>
+  </div>
+</footer>
+</body>
+</html>

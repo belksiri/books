@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GNU Radio Step by Step — corrections and updates</title>
+<meta name="description" content="Version history of the reader resources for GNU Radio Step by Step.">
+<link rel="canonical" href="https://belksiri.github.io/books/gnu-radio-pas-a-pas/en/corrections/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GNU Radio Step by Step — corrections and updates">
+<meta property="og:description" content="Version history of the reader resources for GNU Radio Step by Step.">
+<meta property="og:url" content="https://belksiri.github.io/books/gnu-radio-pas-a-pas/en/corrections/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/logo_belksiri.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/styles.css">
+<style>
+/* Une empreinte SHA-256 citée en plein texte est un mot de 64 caractères : sans
+   cette règle elle déborde de la fenêtre sur un écran étroit. Locale à cette
+   page, pour ne pas toucher assets/styles.css, commun aux pages françaises. */
+main p code { overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<a class="saut" href="#contenu">Skip to content</a>
+<header class="haut">
+  <div class="enveloppe">
+    <a class="marque" href="../../../"><img src="../../assets/logo_belksiri.svg" alt="" width="30" height="30">Belk Siri</a>
+    <nav aria-label="Series">
+      <a href="../../en/">English edition</a>
+      <a href="../../en/volume-1/">Volume 1</a>
+      <a href="../../en/volume-2/">Volume 2</a>
+      <a href="../../en/corrections/" aria-current="page">Corrections</a>
+      <a href="../../">French edition</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu" class="enveloppe">
+  <div class="heros">
+    <p class="surtitre">GNU Radio Step by Step</p>
+    <h1>Corrections and updates</h1>
+    <p class="sous-titre">What has changed in the resources since first publication.</p>
+  </div>
+  <section aria-labelledby="t-current">
+    <h2 id="t-current">What is online now</h2>
+    <div class="tableau">
+    <table>
+      <thead><tr><th scope="col">Archive</th><th scope="col">Version</th>
+      <th scope="col">Bytes</th><th scope="col">SHA-256</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><code>gnu-radio-pas-a-pas-volume-1-resources.zip</code></th>
+          <td>v1.0.0</td>
+          <td class="n">101,214</td>
+          <td><code>1404c04535879b422eb6fe1c0e9ff7965c2f83f7a2b5ea03bc19dd08da5b4072</code></td></tr>
+        <tr><th scope="row"><code>gnu-radio-pas-a-pas-volume-2-resources.zip</code></th>
+          <td>v1.0.1</td>
+          <td class="n">78,372</td>
+          <td><code>d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7</code></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="meta">The archives are reproducible: rebuilt from the same sources, they give
+    back the same checksums. Internal dates normalized, entry order stable, permissions set
+    to 644, no stray macOS files.</p>
+  </section>
+  <section aria-labelledby="t-v101">
+    <h2 id="t-v101">v1.0.1 — September 21, 2026 · Volume 2 only</h2>
+    <p><strong>The chapter numbering was added to the archive.</strong> The folders of
+    Volume 2 carry the internal identifiers <code>CH27</code> to <code>CH42</code>, which are
+    not chapter numbers: the volume is read as Chapter 1 through Chapter 16. The archive now
+    states the correspondence, in its <code>README.txt</code> and in its
+    <code>MANIFEST.json</code>.</p>
+    <p><strong>No flowgraph changed.</strong> The 16 resource files
+    are byte-for-byte the ones of v1.0.0, with the same individual checksums. Only the two
+    description files inside the archive differ, so only the checksum of the archive itself
+    moved — from
+    <code>f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90</code> (77,004 bytes)
+    to <code>d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7</code> (78,372 bytes).</p>
+    <p class="note"><strong>If you downloaded Volume 2 before September 21, 2026</strong>,
+    you do not need to download it again: your flowgraphs are current. Fetch the new archive
+    only if you want the chapter-numbering table.</p>
+    <p class="meta">The Volume 1 archive was not reissued and stays at v1.0.0.</p>
+  </section>
+  <section aria-labelledby="t-v100">
+    <h2 id="t-v100">v1.0.0 — September 20, 2026</h2>
+    <p><strong>First publication.</strong> 34 files for Volume 1,
+    16 for Volume 2: the example flowgraphs of the chapters, the
+    flowgraphs of the eighteen hands-on exercises, and the audio file they use.</p>
+    <p class="meta">Volume 2 at that version: 77,004 bytes,
+    <code>f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90</code> — superseded by v1.0.1.</p>
+  </section>
+  <section aria-labelledby="t-shared">
+    <h2 id="t-shared">The same files in every language</h2>
+    <p>The reader resources are not translated, and they are not duplicated. A
+    <code>.grc</code> flowgraph holds official GNU Radio block names, numeric values and
+    stable identifiers; none of it depends on the language of the book. The English edition
+    and the French edition therefore download the same two archives, under the same names,
+    with the same checksums.</p>
+    <p>A correction to the resources applies to every edition at once: there is one set of
+    files, one version number, and one checksum per archive. The
+    <a href="../../fr/corrections/">French corrections page</a> tracks the same releases.</p>
+  </section>
+  <section aria-labelledby="t-report">
+    <h2 id="t-report">Report a problem</h2>
+    <p>A flowgraph that refuses to open, a missing file, a checksum that does not match:
+    <a href="https://github.com/belksiri/books/issues/new?template=probleme_ressources.md">open
+    an issue on GitHub</a>, giving the volume, the path of the file and your version of GNU
+    Radio.</p>
+  </section>
+  <section aria-labelledby="t-notpub">
+    <h2 id="t-notpub">What is not published here</h2>
+    <p>This page distributes only the files the reader needs. Not published: the text of the
+    book, the composition files, the covers, the working documents, and the Python programs
+    that GNU Radio Companion produces itself — those are rebuilt at every generation.</p>
+    <p>Two hands-on exercise files are not provided either, because the reader is the one who
+    produces them: <code>echantillons.iq</code> (Exercise 8) and the <code>.cfile</code> of
+    real samples (Exercise 18).</p>
+  </section>
+
+</main>
+<footer>
+  <div class="enveloppe">
+    <p><strong>GNU Radio Step by Step</strong> — Belk Siri. Reader resources — Volume 1 v1.0.0 (September 20, 2026), Volume 2 v1.0.1 (September 21, 2026).</p>
+    <p>© 2026 Belk Siri. Downloading is permitted to accompany the book; no license to reuse
+    or redistribute is granted at this stage.</p>
+    <p class="affiliation">GNU Radio is cited as the software studied in this book. This independent
+    publication is not published, sponsored or endorsed by the GNU Radio project or by the
+    Free Software Foundation.</p>
+    <p><a href="../../../">All books by Belk Siri</a> ·
+       <a href="https://github.com/belksiri/books/tree/main/gnu-radio-pas-a-pas">GitHub repository</a></p>
+  </div>
+</footer>
+</body>
+</html>

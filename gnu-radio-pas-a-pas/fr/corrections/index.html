@@ -13,6 +13,12 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="../../assets/logo_belksiri.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../assets/styles.css">
+<style>
+/* Une empreinte SHA-256 citée en plein texte est un mot de 64 caractères : sans
+   cette règle elle déborde de la fenêtre sur un écran étroit. Locale à cette
+   page, pour ne pas toucher assets/styles.css, commun à toutes les pages. */
+main p code { overflow-wrap: anywhere; }
+</style>
 </head>
 <body>
 <a class="saut" href="#contenu">Aller au contenu</a>
@@ -32,26 +38,52 @@
     <h1>Corrections et mises à jour</h1>
     <p class="sous-titre">Ce qui a changé dans les ressources depuis la première publication.</p>
   </div>
-  <section aria-labelledby="t-v100">
-    <h2 id="t-v100">v1.0.0 — 20 septembre 2026</h2>
-    <p><strong>Première publication.</strong> 34 fichiers au volume 1, 16 au
-    volume 2 : les montages d'exemple des chapitres, les montages des dix-huit travaux
-    pratiques, et le fichier son qu'ils emploient.</p>
+  <section aria-labelledby="t-actuel">
+    <h2 id="t-actuel">Ce qui est en ligne</h2>
     <div class="tableau">
     <table>
-      <thead><tr><th scope="col">Archive</th><th scope="col">Octets</th>
-      <th scope="col">SHA-256</th></tr></thead>
+      <thead><tr><th scope="col">Archive</th><th scope="col">Version</th>
+      <th scope="col">Octets</th><th scope="col">SHA-256</th></tr></thead>
       <tbody>
-        <tr><th scope="row"><code>gnu-radio-pas-a-pas-volume-1-resources.zip</code></th><td class="n">101 214</td>
+        <tr><th scope="row"><code>gnu-radio-pas-a-pas-volume-1-resources.zip</code></th>
+          <td>v1.0.0</td><td class="n">101 214</td>
           <td><code>1404c04535879b422eb6fe1c0e9ff7965c2f83f7a2b5ea03bc19dd08da5b4072</code></td></tr>
-        <tr><th scope="row"><code>gnu-radio-pas-a-pas-volume-2-resources.zip</code></th><td class="n">77 004</td>
-          <td><code>f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90</code></td></tr>
+        <tr><th scope="row"><code>gnu-radio-pas-a-pas-volume-2-resources.zip</code></th>
+          <td>v1.0.1</td><td class="n">78 372</td>
+          <td><code>d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7</code></td></tr>
       </tbody>
     </table>
     </div>
     <p class="meta">Les archives sont reproductibles : reconstruites à partir des mêmes
     sources, elles redonnent les mêmes empreintes. Dates internes normalisées, ordre
     d'entrée stable, permissions fixées à 644, aucun fichier macOS parasite.</p>
+  </section>
+  <section aria-labelledby="t-v101">
+    <h2 id="t-v101">v1.0.1 — 21 septembre 2026 · volume 2 seulement</h2>
+    <p><strong>La numérotation des chapitres a été ajoutée à l'archive.</strong> Les
+    dossiers du volume 2 portent les identifiants internes <code>CH27</code> à
+    <code>CH42</code>, qui ne sont pas des numéros de chapitre : le volume se lit des
+    chapitres 1 à 16. L'archive donne désormais la correspondance, dans son
+    <code>README.txt</code> et dans son <code>MANIFEST.json</code>.</p>
+    <p><strong>Aucun montage n'a changé.</strong> Les 16 fichiers de travail sont, octet
+    pour octet, ceux de la v1.0.0, avec les mêmes empreintes individuelles. Seuls les deux
+    fichiers de description contenus dans l'archive diffèrent : c'est donc la seule
+    empreinte de l'archive elle-même qui a bougé, de
+    <code>f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90</code>
+    (77 004 octets) à <code>d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7</code> (78 372 octets).</p>
+    <p class="note"><strong>Si vous avez téléchargé le volume 2 avant le 21 septembre
+    2026</strong>, il est inutile de le reprendre : vos montages sont à jour. Ne
+    retéléchargez que si vous voulez le tableau de correspondance des chapitres.</p>
+    <p class="meta">L'archive du volume 1 n'a pas été rééditée et reste en v1.0.0.</p>
+  </section>
+  <section aria-labelledby="t-v100">
+    <h2 id="t-v100">v1.0.0 — 20 septembre 2026</h2>
+    <p><strong>Première publication.</strong> 34 fichiers au volume 1, 16 au
+    volume 2 : les montages d'exemple des chapitres, les montages des dix-huit travaux
+    pratiques, et le fichier son qu'ils emploient.</p>
+    <p class="meta">Le volume 2 à cette version : 77 004 octets,
+    <code>f5316a492d9df4f3bd367b001616807c0a436e694c81787b0eceb0b1e3589a90</code> —
+    remplacée par la v1.0.1.</p>
   </section>
   <section aria-labelledby="t-signaler">
     <h2 id="t-signaler">Signaler un problème</h2>
@@ -75,7 +107,7 @@
 </main>
 <footer>
   <div class="enveloppe">
-    <p><strong>GNU Radio pas à pas</strong> — Belk Siri. Ressources du lecteur v1.0.0, 20 septembre 2026.</p>
+    <p><strong>GNU Radio pas à pas</strong> — Belk Siri. Ressources du lecteur : volume 1 v1.0.0 (20 septembre 2026), volume 2 v1.0.1 (21 septembre 2026).</p>
     <p>© 2026 Belk Siri. Téléchargement autorisé pour accompagner le livre ; aucune licence de
     réutilisation ou de redistribution n'est accordée à ce stade.</p>
     <p class="affiliation">GNU Radio est cité comme le logiciel étudié dans cet ouvrage. Cette publication indépendante n’est ni éditée, ni parrainée, ni approuvée par le projet GNU Radio ou par la Free Software Foundation.</p>
