@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GNU Radio Schritt für Schritt, Band 2 — Materialien</title>
+<meta name="description" content="Materialien zu Band 2 von GNU Radio Schritt für Schritt, von Belk Siri: die .grc-Flowgraphs, für GNU Radio 3.10.12.0.">
+<link rel="canonical" href="https://belksiri.github.io/books/gnu-radio-pas-a-pas/de/volume-2/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GNU Radio Schritt für Schritt, Band 2 — Materialien">
+<meta property="og:description" content="Materialien zu Band 2 von GNU Radio Schritt für Schritt, von Belk Siri: die .grc-Flowgraphs, für GNU Radio 3.10.12.0.">
+<meta property="og:url" content="https://belksiri.github.io/books/gnu-radio-pas-a-pas/de/volume-2/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/logo_belksiri.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/styles.css">
+<script>
+document.addEventListener("click", function (ev) {
+  var b = ev.target.closest("[data-copie]");
+  if (!b) return;
+  var n = document.getElementById(b.getAttribute("data-copie"));
+  if (!n || !navigator.clipboard) return;
+  navigator.clipboard.writeText(n.textContent.trim()).then(function () {
+    b.textContent = "Kopiert";
+    setTimeout(function () { b.textContent = "Kopieren"; }, 1800);
+  }, function () {});
+});
+</script>
+</head>
+<body>
+<a class="saut" href="#contenu">Zum Inhalt springen</a>
+<header class="haut">
+  <div class="enveloppe">
+    <a class="marque" href="../../../"><img src="../../assets/logo_belksiri.svg" alt="" width="30" height="30">Belk Siri</a>
+    <nav aria-label="Reihe">
+      <a href="../../de/">Deutsche Ausgabe</a>
+      <a href="../../de/volume-1/">Band 1</a>
+      <a href="../../de/volume-2/" aria-current="page">Band 2</a>
+      <a href="../../de/korrekturen/">Korrekturen</a>
+      <a href="../../">Französische Ausgabe</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu" class="enveloppe">
+  <div class="heros">
+    <div class="bandeau v2">
+      <p class="surtitre">Materialien · v1.0.1 · Band 2</p>
+      <h1>Modulation, digitale Kommunikation und RTL-SDR</h1>
+      <p class="sous-titre">GNU Radio Schritt für Schritt, Band 2 — Kapitel 1 bis 16</p>
+      <p>16 Dateien: die Flowgraphs der Kapitel und der Übungen,
+      und die Audiodatei, die sie verwenden. Fertig zum Öffnen in GNU Radio Companion
+      3.10.12.0.</p>
+      <div class="boutons">
+        <a class="bouton plein" href="../../downloads/gnu-radio-pas-a-pas-volume-2-resources.zip" download>Archiv zu Band 2 herunterladen</a>
+        <a class="bouton vide" href="../volume-1/">Zu Band 1</a>
+      </div>
+      <p class="meta" style="color:#c9cdd4">gnu-radio-pas-a-pas-volume-2-resources.zip ·
+      78 372 Byte · 18 Einträge · Version v1.0.1</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="t-geteilt">
+    <h2 id="t-geteilt">Ein Archiv für alle Ausgaben</h2>
+    <p>Die Materialien sind <strong>allen Ausgaben des Buches gemeinsam</strong>. Eine
+    <code>.grc</code>-Datei enthält nur offizielle GNU-Radio-Blocknamen, Zahlen und
+    Kennungen — nichts, was übersetzt werden müsste. Die deutsche Ausgabe lädt deshalb
+    genau dasselbe Archiv wie die französische, und die Dateinamen ändern sich nicht.</p>
+    <p class="meta">Darum heißt das Archiv weiterhin <code>gnu-radio-pas-a-pas-volume-2-resources.zip</code>: Eine Umbenennung
+    würde die Prüfsummen ungültig machen, die in der bereits veröffentlichten französischen
+    Ausgabe gedruckt stehen. Aus demselben Grund ist die <code>README.txt</code> darin
+    französisch; denselben Text auf Deutsch finden Sie in
+    <a href="../README-band-2.txt">README-band-2.txt</a>.</p>
+  </section>
+
+  <section aria-labelledby="t-pruefen">
+    <h2 id="t-pruefen">Ihren Download prüfen</h2>
+    <p>Die SHA-256-Prüfsumme des Archivs muss genau diese sein:</p>
+    <div class="empreinte">
+      <code id="sha2">d7a6b1727fd9d4ad5e7e9a536e039e3423684a7a1416865a3c60b579c680f0c7</code>
+      <button type="button" data-copie="sha2">Kopieren</button>
+    </div>
+    <p>Vergleichen Sie sie mit der Prüfsumme der Datei, die Sie erhalten haben:</p>
+    <div class="grille">
+      <div class="carte"><h3>macOS oder Linux</h3>
+        <pre>shasum -a 256 gnu-radio-pas-a-pas-volume-2-resources.zip</pre></div>
+      <div class="carte"><h3>Windows (PowerShell)</h3>
+        <pre>Get-FileHash gnu-radio-pas-a-pas-volume-2-resources.zip -Algorithm SHA256</pre></div>
+    </div>
+    <p class="meta">Die Prüfsummen aller Dateien einzeln stehen im
+    <a href="../../manifests/volume-2-files-de.json">Manifest des Bandes</a> und in
+    <a href="../../manifests/SHA256SUMS">SHA256SUMS</a>.</p>
+  </section>
+
+  <section aria-labelledby="t-inv">
+    <h2 id="t-inv">Verzeichnis, Kapitel für Kapitel</h2>
+    <div class="tableau">
+    <table>
+      <caption>16 Dateien, 631 172 Byte insgesamt.
+      Die Kapitelnummern sind die im Buch gedruckten, kapitel 1 bis 16.</caption>
+      <thead><tr><th scope="col">Kapitel</th><th scope="col">Datei</th>
+      <th scope="col">Rolle</th><th scope="col">Byte</th><th scope="col"></th></tr></thead>
+      <tbody>
+      <tr><th scope="rowgroup" rowspan="1">2</th><td><code>flowgraphs/TP-11/fg_tp11_001.grc</code></td><td>Übung</td><td class="n">9 353</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-11/fg_tp11_001.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="3">3</th><td><code>flowgraphs/TP-12/book-audio.wav</code></td><td>Audiodatei</td><td class="n">529 244</td><td class="n"><a href="../../resources/common/audio/book-audio.wav">ansehen</a></td></tr>
+      <tr><td><code>flowgraphs/TP-12/fg_tp12_001.grc</code></td><td>Übung</td><td class="n">8 303</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-12/fg_tp12_001.grc">ansehen</a></td></tr>
+      <tr><td><code>flowgraphs/TP-12/fg_tp12_002.grc</code></td><td>Übung</td><td class="n">6 200</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-12/fg_tp12_002.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">4</th><td><code>flowgraphs/TP-13/fg_tp13_001.grc</code></td><td>Übung</td><td class="n">7 620</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-13/fg_tp13_001.grc">ansehen</a></td></tr>
+      <tr><td><code>flowgraphs/TP-13/fg_tp13_002.grc</code></td><td>Übung</td><td class="n">7 557</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-13/fg_tp13_002.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">5</th><td><code>flowgraphs/TP-14/fg_tp14_001.grc</code></td><td>Übung</td><td class="n">8 174</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-14/fg_tp14_001.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">6</th><td><code>flowgraphs/TP-15/fg_tp15_001.grc</code></td><td>Übung</td><td class="n">9 571</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-15/fg_tp15_001.grc">ansehen</a></td></tr>
+      <tr><td><code>flowgraphs/TP-15/fg_tp15_002.grc</code></td><td>Übung</td><td class="n">9 729</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-15/fg_tp15_002.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">8</th><td><code>flowgraphs/CH34/fg_ch34_001.grc</code></td><td>Beispiel-Flowgraph des Kapitels</td><td class="n">3 987</td><td class="n"><a href="../../resources/volume-2/flowgraphs/CH34/fg_ch34_001.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">9</th><td><code>flowgraphs/TP-16/fg_tp16_001.grc</code></td><td>Übung</td><td class="n">5 464</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-16/fg_tp16_001.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">10</th><td><code>flowgraphs/TP-17/fg_tp17_001.grc</code></td><td>Übung</td><td class="n">6 305</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-17/fg_tp17_001.grc">ansehen</a></td></tr>
+      <tr><td><code>flowgraphs/TP-17/fg_tp17_002.grc</code></td><td>Übung</td><td class="n">6 421</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-17/fg_tp17_002.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="2">11</th><td><code>flowgraphs/TP-18/fg_tp18_001.grc</code></td><td>Übung</td><td class="n">3 898</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-18/fg_tp18_001.grc">ansehen</a></td></tr>
+      <tr><td><code>flowgraphs/TP-18/fg_tp18_002.grc</code></td><td>Übung</td><td class="n">4 671</td><td class="n"><a href="../../resources/volume-2/flowgraphs/TP-18/fg_tp18_002.grc">ansehen</a></td></tr>
+      <tr><th scope="rowgroup" rowspan="1">14</th><td><code>flowgraphs/CH40/fg_ch40_001.grc</code></td><td>Beispiel-Flowgraph des Kapitels</td><td class="n">4 675</td><td class="n"><a href="../../resources/volume-2/flowgraphs/CH40/fg_ch40_001.grc">ansehen</a></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="meta">Die Ordnernamen <code>CH27</code> bis <code>CH42</code> und
+    <code>TP-11</code> bis <code>TP-18</code> sind <strong>interne Kennungen</strong>, keine
+    Kapitelnummern: Eine Kennung wird nach ihrer Vergabe nie wieder umnummeriert. Das Buch
+    liest sich als Kapitel 1 bis Kapitel 16.</p>
+  </section>
+
+</main>
+<footer>
+  <div class="enveloppe">
+    <p><strong>GNU Radio Schritt für Schritt</strong> — Belk Siri. Materialien v1.0.1, 21. September 2026.</p>
+    <p>© 2026 Belk Siri. Das Herunterladen ist als Begleitung zum Buch gestattet; ein Recht
+    zur Weiterverwendung oder Weitergabe wird zum jetzigen Zeitpunkt nicht eingeräumt.</p>
+    <p class="affiliation">GNU Radio wird in diesem Buch als die behandelte Software genannt.
+    Diese unabhängige Veröffentlichung wird vom GNU-Radio-Projekt und von der Free Software
+    Foundation weder herausgegeben noch unterstützt noch gebilligt.</p>
+    <p><a href="../../../">Alle Bücher von Belk Siri</a> ·
+       <a href="https://github.com/belksiri/books/tree/main/gnu-radio-pas-a-pas">GitHub-Repository</a></p>
+  </div>
+</footer>
+</body>
+</html>
