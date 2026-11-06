@@ -7,16 +7,15 @@
 <meta name="description" content="Todo lo necesario para seguir el libro en tu ordenador: el código completo del proyecto Rivelune, sus tests y las soluciones de los ejercicios. La mayor parte del trabajo es gratuita, con un modelo simulado.">
 <link rel="alternate" hreflang="fr" href="./"><link rel="alternate" hreflang="en" href="en.html"><link rel="alternate" hreflang="es" href="es.html"><link rel="alternate" hreflang="de" href="de.html">
 <link rel="icon" href="assets/logo-belksiri.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=621c102b9b">
 </head>
 <body>
 <header class="top">
  <div class="wrap bar">
-  <a class="back" href="../">← Todos los libros</a>
   <nav aria-label="Idioma de la página"><ul class="lang"><li><a href="./" hreflang="fr" lang="fr">Français</a></li><li><a href="en.html" hreflang="en" lang="en">English</a></li><li><a href="es.html" hreflang="es" lang="es" aria-current="page">Español</a></li><li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li></ul></nav>
  </div>
  <div class="wrap hero">
-  <img src="assets/couverture-es.jpg" width="900" height="1350" alt="Portada de «Tus primeros agentes de IA, paso a paso», de Belk Siri: tres robots suben una escalera luminosa.">
+  <img src="assets/couverture-es.jpg?v=f4c683510f" width="900" height="1350" alt="Portada de «Tus primeros agentes de IA, paso a paso», de Belk Siri: tres robots suben una escalera luminosa.">
   <div class="text">
    <p class="kicker">Recursos del lector</p>
    <h1>Tus primeros agentes de IA, <span class="accent">paso a paso</span></h1>
@@ -42,17 +41,23 @@ cd code</pre></div><p class="after">Todos los comandos del libro se lanzan desde
 uv run pytest</pre></div><p class="after">Lo que cuenta: varios <code>passed</code>, ningún <code>failed</code>.</p></li><li><h3>Lanza una primera demostración</h3><p>Una misión simulada y gratuita:</p><div class="cmd" data-copy="Copiar" data-copied="Copiado"><pre>uv run assistant demo</pre></div></li></ol>
   <div class="later"><strong>Más adelante en el libro</strong><ul><li>Para la página web del capítulo 11: <code>uv sync --locked --extra interface</code>.</li><li>Las llamadas a un modelo real pasan por una API de pago y están cerradas por defecto. El capítulo 2 explica la clave, el interruptor <code>ASSISTANT_ALLOW_LIVE</code> y los límites de gasto. No compartas nunca tu clave.</li></ul></div>
  </section>
- <section>
+ <section class="info">
   <details>
-   <summary>Versiones, limitaciones, licencias y huellas</summary>
+   <summary>Requisitos, versiones y limitaciones</summary>
    <div class="tech">
-    <h3>Versión de los recursos</h3><p>1.0.0 · 6 de noviembre de 2026</p>
+    <h3>Requisitos</h3><ul><li>Las bases de Python.</li><li>Un ordenador con macOS, Linux o Windows (solo se probó macOS), con un terminal.</li><li>uv, que instala Python 3.12 si hace falta.</li><li>Ninguna clave ni cuenta para seguir el libro: los tests y las demostraciones usan un modelo simulado. Una clave de API de pago solo sirve para las pruebas reales, opcionales.</li></ul>
     <h3>Versiones utilizadas</h3><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
     <h3>Limitaciones conocidas</h3><ul><li>Probado solo en macOS (Apple Silicon) con Python 3.12.4 y uv 0.12.10; Linux y Windows están documentados pero sin probar; la página web solo se vio en Chrome.</li><li>Las pruebas reales son pocas, del 5 de noviembre de 2026, en francés, con un solo modelo; los precios y modelos del proveedor cambian.</li><li>No se probó ningún despliegue en un servidor; el recurso Docker nunca se construyó.</li><li>Las ediciones inglesa, española y alemana no han tenido revisión humana nativa.</li></ul>
+   </div>
+  </details>
+  <details>
+   <summary>Licencias y huellas</summary>
+   <div class="tech">
     <h3>Licencias</h3><ul><li>Código y herramientas: licencia MIT.</li><li>Documentos de demostración «Rivelune»: CC BY 4.0, en la medida de los derechos que se poseen; Rivelune y sus personas son ficticias.</li><li>Texto e ilustraciones del libro: todos los derechos reservados; no se incluyen aquí.</li></ul>
     <h3>Huellas SHA-256</h3>
     <p>Para comprobar un archivo descargado: <code>shasum -a 256 &lt;archivo&gt;</code> (macOS, Linux). Lista: <a href="telechargements/SHA256SUMS.txt">SHA256SUMS.txt</a></p>
     <div class="sha">9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289&nbsp; vos-premiers-agents-ia-code.zip<br>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9&nbsp; essais-reels-2026-11-05.zip</div>
+    <p class="ver">Versión de los recursos : 1.0.0 · 6 de noviembre de 2026</p>
    </div>
   </details>
  </section>
@@ -62,7 +67,7 @@ uv run pytest</pre></div><p class="after">Lo que cuenta: varios <code>passed</co
  </section>
  
 </main>
-<footer class="wrap">Recursos gratuitos, sin cuenta ni registro. · <a href="../">Todos los libros</a></footer>
+<footer class="wrap"><a class="btn2 back-all" href="../">← Todos los libros</a><p>Recursos gratuitos, sin cuenta ni registro.</p></footer>
 <script>
 document.querySelectorAll('.cmd').forEach(function(box){
   if(!navigator.clipboard) return;

@@ -8,7 +8,7 @@ code{font:.9em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;backgrou
 h1,h2,h3,.btn,.lang a{font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
 .wrap{max-width:960px;margin:0 auto;padding-inline:20px}
 .top{background:var(--deep);color:#fff}
-.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:12px;padding-block:14px}
 .back{color:#c9d4f2;text-decoration:none;font-size:15px}
 .back:hover,.back:focus-visible{color:#fff;text-decoration:underline}
 .lang{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
@@ -52,7 +52,11 @@ ol.steps>li::before{content:counter(s);position:absolute;left:18px;top:16px;widt
 .cmd button:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .later{margin-top:18px;font-size:15px}
 .later ul{margin:6px 0 0;padding-left:20px}
+.info{display:grid;gap:14px}
 details{border:1px solid var(--line);border-radius:14px;background:#fff}
+.ver{color:var(--mute);margin:14px 0 0}
+footer .back-all{margin-bottom:10px}
+footer p{margin:6px 0 0}
 summary{cursor:pointer;padding:16px 20px;font-weight:700;color:var(--ink);font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:18px}
 details[open] summary{border-bottom:1px solid var(--line)}
 .tech{padding:6px 20px 18px;font-size:15px}

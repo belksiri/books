@@ -7,16 +7,15 @@
 <meta name="description" content="Everything you need to follow the book on your computer: the complete code of the Rivelune project, its tests and the exercise solutions. Most of the work is free, with a simulated model.">
 <link rel="alternate" hreflang="fr" href="./"><link rel="alternate" hreflang="en" href="en.html"><link rel="alternate" hreflang="es" href="es.html"><link rel="alternate" hreflang="de" href="de.html">
 <link rel="icon" href="assets/logo-belksiri.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=621c102b9b">
 </head>
 <body>
 <header class="top">
  <div class="wrap bar">
-  <a class="back" href="../">← All books</a>
   <nav aria-label="Page language"><ul class="lang"><li><a href="./" hreflang="fr" lang="fr">Français</a></li><li><a href="en.html" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="es.html" hreflang="es" lang="es">Español</a></li><li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li></ul></nav>
  </div>
  <div class="wrap hero">
-  <img src="assets/couverture-en.jpg" width="900" height="1350" alt="Front cover of “Your First AI Agents, Step by Step” by Belk Siri: three robots climb a glowing staircase.">
+  <img src="assets/couverture-en.jpg?v=fdc6b9e994" width="900" height="1350" alt="Front cover of “Your First AI Agents, Step by Step” by Belk Siri: three robots climb a glowing staircase.">
   <div class="text">
    <p class="kicker">Reader resources</p>
    <h1>Your First AI Agents, <span class="accent">Step by Step</span></h1>
@@ -42,17 +41,23 @@ cd code</pre></div><p class="after">Every command in the book runs from this fol
 uv run pytest</pre></div><p class="after">What matters: some <code>passed</code>, no <code>failed</code>.</p></li><li><h3>Run a first demonstration</h3><p>A simulated, free mission:</p><div class="cmd" data-copy="Copy" data-copied="Copied"><pre>uv run assistant demo</pre></div></li></ol>
   <div class="later"><strong>Later in the book</strong><ul><li>For the chapter 11 web page: <code>uv sync --locked --extra interface</code>.</li><li>Calls to a real model go through a paid API and are off by default. Chapter 2 explains the key, the <code>ASSISTANT_ALLOW_LIVE</code> switch and the spending limits. Never share your key.</li></ul></div>
  </section>
- <section>
+ <section class="info">
   <details>
-   <summary>Versions, limitations, licenses and checksums</summary>
+   <summary>Prerequisites, versions and limitations</summary>
    <div class="tech">
-    <h3>Resources version</h3><p>1.0.0 · November 6, 2026</p>
+    <h3>Prerequisites</h3><ul><li>The basics of Python.</li><li>A computer running macOS, Linux or Windows (only macOS was tested), with a terminal.</li><li>uv, which installs Python 3.12 if needed.</li><li>No key or account to follow the book: the tests and demonstrations use a simulated model. A paid API key is only useful for the optional real trials.</li></ul>
     <h3>Versions used</h3><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
     <h3>Known limitations</h3><ul><li>Tested only on macOS (Apple Silicon) with Python 3.12.4 and uv 0.12.10; Linux and Windows are documented but untested; the web page was only seen in Chrome.</li><li>The real trials are few, dated November 5, 2026, in French, with a single model; the provider’s prices and models change.</li><li>No server deployment was tested; the Docker resource was never built.</li><li>The English, Spanish and German editions have had no native human review.</li></ul>
+   </div>
+  </details>
+  <details>
+   <summary>Licenses and checksums</summary>
+   <div class="tech">
     <h3>Licenses</h3><ul><li>Code and tools: MIT license.</li><li>“Rivelune” demonstration documents: CC BY 4.0, to the extent of the rights held; Rivelune and its people are fictional.</li><li>The book’s text and illustrations: all rights reserved; they are not included here.</li></ul>
     <h3>SHA-256 checksums</h3>
     <p>To check a downloaded archive: <code>shasum -a 256 &lt;file&gt;</code> (macOS, Linux). List: <a href="telechargements/SHA256SUMS.txt">SHA256SUMS.txt</a></p>
     <div class="sha">9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289&nbsp; vos-premiers-agents-ia-code.zip<br>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9&nbsp; essais-reels-2026-11-05.zip</div>
+    <p class="ver">Resources version : 1.0.0 · November 6, 2026</p>
    </div>
   </details>
  </section>
@@ -62,7 +67,7 @@ uv run pytest</pre></div><p class="after">What matters: some <code>passed</code>
  </section>
  
 </main>
-<footer class="wrap">Free resources, no account or sign-up. · <a href="../">All books</a></footer>
+<footer class="wrap"><a class="btn2 back-all" href="../">← All books</a><p>Free resources, no account or sign-up.</p></footer>
 <script>
 document.querySelectorAll('.cmd').forEach(function(box){
   if(!navigator.clipboard) return;

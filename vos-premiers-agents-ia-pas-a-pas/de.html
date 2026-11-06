@@ -7,16 +7,15 @@
 <meta name="description" content="Alles, was Sie brauchen, um das Buch auf Ihrem Rechner nachzuvollziehen: der vollständige Code des Projekts Rivelune, seine Tests und die Lösungen der Übungen. Die meisten Schritte sind kostenlos, mit einem simulierten Modell.">
 <link rel="alternate" hreflang="fr" href="./"><link rel="alternate" hreflang="en" href="en.html"><link rel="alternate" hreflang="es" href="es.html"><link rel="alternate" hreflang="de" href="de.html">
 <link rel="icon" href="assets/logo-belksiri.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=621c102b9b">
 </head>
 <body>
 <header class="top">
  <div class="wrap bar">
-  <a class="back" href="../">← Alle Bücher</a>
   <nav aria-label="Sprache der Seite"><ul class="lang"><li><a href="./" hreflang="fr" lang="fr">Français</a></li><li><a href="en.html" hreflang="en" lang="en">English</a></li><li><a href="es.html" hreflang="es" lang="es">Español</a></li><li><a href="de.html" hreflang="de" lang="de" aria-current="page">Deutsch</a></li></ul></nav>
  </div>
  <div class="wrap hero">
-  <img src="assets/couverture-de.jpg" width="900" height="1350" alt="Titelseite von „Ihre ersten KI-Agenten – Schritt für Schritt“ von Belk Siri: Drei Roboter steigen eine leuchtende Treppe hinauf.">
+  <img src="assets/couverture-de.jpg?v=3c5bb130d4" width="900" height="1350" alt="Titelseite von „Ihre ersten KI-Agenten – Schritt für Schritt“ von Belk Siri: Drei Roboter steigen eine leuchtende Treppe hinauf.">
   <div class="text">
    <p class="kicker">Begleitmaterial</p>
    <h1>Ihre ersten KI-Agenten – <span class="accent">Schritt für Schritt</span></h1>
@@ -42,17 +41,23 @@ cd code</pre></div><p class="after">Alle Befehle des Buches werden in diesem Ord
 uv run pytest</pre></div><p class="after">Entscheidend: einige <code>passed</code>, kein <code>failed</code>.</p></li><li><h3>Eine erste Vorführung starten</h3><p>Eine simulierte, kostenlose Mission:</p><div class="cmd" data-copy="Kopieren" data-copied="Kopiert"><pre>uv run assistant demo</pre></div></li></ol>
   <div class="later"><strong>Später im Buch</strong><ul><li>Für die Webseite aus Kapitel 11: <code>uv sync --locked --extra interface</code>.</li><li>Aufrufe eines echten Modells laufen über eine kostenpflichtige API und sind standardmäßig gesperrt. Kapitel 2 erklärt den Schlüssel, den Schalter <code>ASSISTANT_ALLOW_LIVE</code> und die Ausgabengrenzen. Geben Sie Ihren Schlüssel nie weiter.</li></ul></div>
  </section>
- <section>
+ <section class="info">
   <details>
-   <summary>Versionen, Grenzen, Lizenzen und Prüfsummen</summary>
+   <summary>Voraussetzungen, Versionen und Grenzen</summary>
    <div class="tech">
-    <h3>Version des Begleitmaterials</h3><p>1.0.0 · 6. November 2026</p>
+    <h3>Voraussetzungen</h3><ul><li>Grundlagen in Python.</li><li>Ein Rechner mit macOS, Linux oder Windows (nur macOS wurde getestet) und ein Terminal.</li><li>uv, das bei Bedarf Python 3.12 installiert.</li><li>Kein Schlüssel und kein Konto, um dem Buch zu folgen: Tests und Vorführungen nutzen ein simuliertes Modell. Ein kostenpflichtiger API-Schlüssel ist nur für die optionalen echten Versuche nötig.</li></ul>
     <h3>Verwendete Versionen</h3><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
     <h3>Bekannte Grenzen</h3><ul><li>Nur unter macOS (Apple Silicon) mit Python 3.12.4 und uv 0.12.10 getestet; Linux und Windows sind beschrieben, aber ungetestet; die Webseite wurde nur in Chrome angesehen.</li><li>Die echten Versuche sind wenige, vom 5. November 2026, auf Französisch, mit einem einzigen Modell; Preise und Modelle des Anbieters ändern sich.</li><li>Keine Bereitstellung auf einem Server wurde getestet; das Docker-Hilfsmittel wurde nie gebaut.</li><li>Die englische, spanische und deutsche Ausgabe wurden nicht von Muttersprachlern geprüft.</li></ul>
+   </div>
+  </details>
+  <details>
+   <summary>Lizenzen und Prüfsummen</summary>
+   <div class="tech">
     <h3>Lizenzen</h3><ul><li>Code und Werkzeuge: MIT-Lizenz.</li><li>Demodokumente „Rivelune“: CC BY 4.0, soweit die Rechte bestehen; Rivelune und seine Personen sind erfunden.</li><li>Text und Abbildungen des Buches: alle Rechte vorbehalten; sie sind hier nicht enthalten.</li></ul>
     <h3>SHA-256-Prüfsummen</h3>
     <p>Zum Prüfen eines heruntergeladenen Archivs: <code>shasum -a 256 &lt;Datei&gt;</code> (macOS, Linux). Liste: <a href="telechargements/SHA256SUMS.txt">SHA256SUMS.txt</a></p>
     <div class="sha">9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289&nbsp; vos-premiers-agents-ia-code.zip<br>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9&nbsp; essais-reels-2026-11-05.zip</div>
+    <p class="ver">Version des Begleitmaterials : 1.0.0 · 6. November 2026</p>
    </div>
   </details>
  </section>
@@ -62,7 +67,7 @@ uv run pytest</pre></div><p class="after">Entscheidend: einige <code>passed</cod
  </section>
  
 </main>
-<footer class="wrap">Kostenloses Begleitmaterial, ohne Konto und ohne Anmeldung. · <a href="../">Alle Bücher</a></footer>
+<footer class="wrap"><a class="btn2 back-all" href="../">← Alle Bücher</a><p>Kostenloses Begleitmaterial, ohne Konto und ohne Anmeldung.</p></footer>
 <script>
 document.querySelectorAll('.cmd').forEach(function(box){
   if(!navigator.clipboard) return;
