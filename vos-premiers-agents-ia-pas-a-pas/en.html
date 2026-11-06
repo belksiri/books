@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your First AI Agents, Step by Step — Belk Siri</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<nav>Other languages: <a href="fr.html">Français</a> <a href="es.html">Español</a> <a href="de.html">Deutsch</a></nav>
-<h1>Your First AI Agents, Step by Step<small>Belk Siri</small></h1>
-<p>Resources for Belk Siri’s book: the complete code of the Rivelune project, its tests, the exercise solutions, and the traces of the real trials described in the book.</p>
-<h2>Downloads</h2><ul><li><a href="telechargements/vos-premiers-agents-ia-code.zip">vos-premiers-agents-ia-code.zip</a> (398 Ko) — The book’s code (the <code>code/</code> folder, with tests and solutions)</li><li><a href="telechargements/essais-reels-2026-11-05.zip">essais-reels-2026-11-05.zip</a> (132 Ko) — Traces of the real trials of November 5, 2026 (optional, to check the book’s figures; do not unzip inside <code>code/</code>)</li></ul>
-<p><strong>SHA-256 checksums</strong></p><div class="sha"><div>9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289  vos-premiers-agents-ia-code.zip</div><div>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9  essais-reels-2026-11-05.zip</div></div>
-<h2>Installation</h2><ol><li>Install <a href="https://docs.astral.sh/uv/">uv</a>, which also installs Python if needed.</li><li>Unzip the code archive, then move into the <code>code/</code> folder.</li><li>Run <code>uv sync --locked</code>, then <code>uv run pytest</code>: the tests run without a key, with a simulated model.</li><li>Run <code>uv run assistant demo</code> for a first free demonstration.</li><li>For the chapter 11 web page: <code>uv sync --locked --extra interface</code>.</li><li>Calls to a real model are paid and off by default: follow chapter 2 (key in <code>code/.env</code>, <code>ASSISTANT_ALLOW_LIVE</code> switch, spending limits). Never share your key.</li></ol>
-<h2>Versions used</h2><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
-<h2>Licenses</h2><ul><li>Code and tools: MIT license.</li><li>“Rivelune” demonstration documents: CC BY 4.0, to the extent of the rights held; Rivelune and its people are fictional.</li><li>The book’s text and illustrations: all rights reserved; they are not included here.</li></ul>
-<h2>Known limitations</h2><ul><li>Tested only on macOS (Apple Silicon) with Python 3.12.4 and uv 0.12.10; Linux and Windows are documented but untested; the web page was only seen in Chrome.</li><li>The real trials are few, dated November 5, 2026, in French, with a single model; the provider’s prices and models change.</li><li>No server deployment was tested; the Docker resource was never built.</li><li>The English, Spanish and German editions have had no native human review.</li></ul>
-
-</body></html>
+<title>Your First AI Agents, Step by Step — Reader resources — Belk Siri</title>
+<meta name="description" content="Everything you need to follow the book on your computer: the complete code of the Rivelune project, its tests and the exercise solutions. Most of the work is free, with a simulated model.">
+<link rel="alternate" hreflang="fr" href="./"><link rel="alternate" hreflang="en" href="en.html"><link rel="alternate" hreflang="es" href="es.html"><link rel="alternate" hreflang="de" href="de.html">
+<link rel="icon" href="assets/logo-belksiri.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+ <div class="wrap bar">
+  <a class="back" href="../">← All books</a>
+  <nav aria-label="Page language"><ul class="lang"><li><a href="./" hreflang="fr" lang="fr">Français</a></li><li><a href="en.html" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="es.html" hreflang="es" lang="es">Español</a></li><li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li></ul></nav>
+ </div>
+ <div class="wrap hero">
+  <img src="assets/couverture-en.jpg" width="900" height="1350" alt="Front cover of “Your First AI Agents, Step by Step” by Belk Siri: three robots climb a glowing staircase.">
+  <div class="text">
+   <p class="kicker">Reader resources</p>
+   <h1>Your First AI Agents, <span class="accent">Step by Step</span></h1>
+   <p class="author">Belk Siri</p>
+   <p class="intro">Everything you need to follow the book on your computer: the complete code of the Rivelune project, its tests and the exercise solutions. Most of the work is free, with a simulated model.</p>
+   <a class="btn" href="telechargements/vos-premiers-agents-ia-code.zip" download><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download the code and exercises</a>
+   <span class="btn-note">ZIP archive · 399 KB · the <code>code/</code> folder: project, tests and solutions</span>
+  </div>
+ </div>
+</header>
+<main class="wrap">
+ <section aria-labelledby="opt">
+  <div class="optional">
+   <div><h3 id="opt">Experiment traces<span class="tag">optional</span></h3>
+   <p>The traces of the real trials of November 5, 2026 (133 KB). They are only for checking the book’s figures; you don’t need them to follow the chapters. Do not unzip them inside <code>code/</code>.</p></div>
+   <a class="btn2" href="telechargements/essais-reels-2026-11-05.zip" download>essais-reels-2026-11-05.zip</a>
+  </div>
+ </section>
+ <section aria-labelledby="start">
+  <h2 id="start">Getting started</h2>
+  <ol class="steps"><li><h3>Install uv</h3><p>It also installs Python if needed. On macOS with Homebrew:</p><div class="cmd" data-copy="Copy" data-copied="Copied"><pre>brew install uv</pre></div><p class="after">For Linux, Windows or without Homebrew, follow the <a href="https://docs.astral.sh/uv/">uv documentation</a>.</p></li><li><h3>Unzip the archive and move into <code>code/</code></h3><p>In the folder where you downloaded it:</p><div class="cmd" data-copy="Copy" data-copied="Copied"><pre>unzip vos-premiers-agents-ia-code.zip
+cd code</pre></div><p class="after">Every command in the book runs from this folder.</p></li><li><h3>Install the book’s versions and run the tests</h3><p>The tests run without a key or network, with a simulated model:</p><div class="cmd" data-copy="Copy" data-copied="Copied"><pre>uv sync --locked
+uv run pytest</pre></div><p class="after">What matters: some <code>passed</code>, no <code>failed</code>.</p></li><li><h3>Run a first demonstration</h3><p>A simulated, free mission:</p><div class="cmd" data-copy="Copy" data-copied="Copied"><pre>uv run assistant demo</pre></div></li></ol>
+  <div class="later"><strong>Later in the book</strong><ul><li>For the chapter 11 web page: <code>uv sync --locked --extra interface</code>.</li><li>Calls to a real model go through a paid API and are off by default. Chapter 2 explains the key, the <code>ASSISTANT_ALLOW_LIVE</code> switch and the spending limits. Never share your key.</li></ul></div>
+ </section>
+ <section>
+  <details>
+   <summary>Versions, limitations, licenses and checksums</summary>
+   <div class="tech">
+    <h3>Resources version</h3><p>1.0.0 · November 6, 2026</p>
+    <h3>Versions used</h3><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
+    <h3>Known limitations</h3><ul><li>Tested only on macOS (Apple Silicon) with Python 3.12.4 and uv 0.12.10; Linux and Windows are documented but untested; the web page was only seen in Chrome.</li><li>The real trials are few, dated November 5, 2026, in French, with a single model; the provider’s prices and models change.</li><li>No server deployment was tested; the Docker resource was never built.</li><li>The English, Spanish and German editions have had no native human review.</li></ul>
+    <h3>Licenses</h3><ul><li>Code and tools: MIT license.</li><li>“Rivelune” demonstration documents: CC BY 4.0, to the extent of the rights held; Rivelune and its people are fictional.</li><li>The book’s text and illustrations: all rights reserved; they are not included here.</li></ul>
+    <h3>SHA-256 checksums</h3>
+    <p>To check a downloaded archive: <code>shasum -a 256 &lt;file&gt;</code> (macOS, Linux). List: <a href="telechargements/SHA256SUMS.txt">SHA256SUMS.txt</a></p>
+    <div class="sha">9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289&nbsp; vos-premiers-agents-ia-code.zip<br>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9&nbsp; essais-reels-2026-11-05.zip</div>
+   </div>
+  </details>
+ </section>
+ <section class="bio" aria-labelledby="bio">
+  <h2 id="bio">About the author</h2>
+  <p lang="fr">Belk Siri est ingénieur en informatique et en radiocommunications, et consultant senior fort de 26 ans d’expérience. Très tôt passionné par l’intelligence artificielle, il a développé son expertise en data science et en exploitation des données, tout en explorant la radio logicielle avec GNU Radio. Il accompagne les entreprises dans l’adoption de ces technologies et la montée en compétences de leurs équipes, avec une approche concrète et accessible. À travers ses ouvrages, il transmet son expérience pour rendre la radio logicielle, l’intelligence artificielle et la data science accessibles, et guider ses lecteurs pas à pas vers la pratique.</p>
+ </section>
+ 
+</main>
+<footer class="wrap">Free resources, no account or sign-up. · <a href="../">All books</a></footer>
+<script>
+document.querySelectorAll('.cmd').forEach(function(box){
+  if(!navigator.clipboard) return;
+  var b=document.createElement('button'); b.type='button';
+  b.textContent=box.dataset.copy;
+  b.setAttribute('aria-label', box.dataset.copy+' : '+box.innerText.trim());
+  b.addEventListener('click',function(){
+    navigator.clipboard.writeText(box.querySelector('pre').innerText).then(function(){
+      b.textContent=box.dataset.copied;
+      setTimeout(function(){b.textContent=box.dataset.copy},1600);});});
+  box.classList.add('copyable'); box.appendChild(b);});
+</script>
+</body>
+</html>
