@@ -7,6 +7,7 @@ couverture. Chaque livre occupe son propre dossier.
 | Livre | Version | Page du livre |
 |---|---|---|
 | *Data science avec Python, pas à pas* | v1.0.1 | [https://belksiri.github.io/books/data-science-python-pas-a-pas/](https://belksiri.github.io/books/data-science-python-pas-a-pas/) |
+| *Vos premiers agents IA, pas à pas* | v1.0.0 | [https://belksiri.github.io/books/vos-premiers-agents-ia-pas-a-pas/](https://belksiri.github.io/books/vos-premiers-agents-ia-pas-a-pas/) |
 
 ## Organisation
 
@@ -35,6 +36,8 @@ deux livres puissent avoir chacun leur version 1.0.0.
 
 Les corrigés, les fichiers de vérité des données et le livre lui-même ne
 sont pas publiés ici. Les corrigés sont distribués séparément.
+Exception : pour *Vos premiers agents IA, pas à pas*, l'archive du code
+contient les corrigés des exercices, comme l'annonce le livre.
 
 ## Signaler un problème
 

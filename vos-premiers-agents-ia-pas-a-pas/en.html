@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your First AI Agents, Step by Step — Belk Siri</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<nav>Other languages: <a href="fr.html">Français</a> <a href="es.html">Español</a> <a href="de.html">Deutsch</a></nav>
+<h1>Your First AI Agents, Step by Step<small>Belk Siri</small></h1>
+<p>Resources for Belk Siri’s book: the complete code of the Rivelune project, its tests, the exercise solutions, and the traces of the real trials described in the book.</p>
+<h2>Downloads</h2><ul><li><a href="telechargements/vos-premiers-agents-ia-code.zip">vos-premiers-agents-ia-code.zip</a> (398 Ko) — The book’s code (the <code>code/</code> folder, with tests and solutions)</li><li><a href="telechargements/essais-reels-2026-11-05.zip">essais-reels-2026-11-05.zip</a> (132 Ko) — Traces of the real trials of November 5, 2026 (optional, to check the book’s figures; do not unzip inside <code>code/</code>)</li></ul>
+<p><strong>SHA-256 checksums</strong></p><div class="sha"><div>9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289  vos-premiers-agents-ia-code.zip</div><div>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9  essais-reels-2026-11-05.zip</div></div>
+<h2>Installation</h2><ol><li>Install <a href="https://docs.astral.sh/uv/">uv</a>, which also installs Python if needed.</li><li>Unzip the code archive, then move into the <code>code/</code> folder.</li><li>Run <code>uv sync --locked</code>, then <code>uv run pytest</code>: the tests run without a key, with a simulated model.</li><li>Run <code>uv run assistant demo</code> for a first free demonstration.</li><li>For the chapter 11 web page: <code>uv sync --locked --extra interface</code>.</li><li>Calls to a real model are paid and off by default: follow chapter 2 (key in <code>code/.env</code>, <code>ASSISTANT_ALLOW_LIVE</code> switch, spending limits). Never share your key.</li></ol>
+<h2>Versions used</h2><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
+<h2>Licenses</h2><ul><li>Code and tools: MIT license.</li><li>“Rivelune” demonstration documents: CC BY 4.0, to the extent of the rights held; Rivelune and its people are fictional.</li><li>The book’s text and illustrations: all rights reserved; they are not included here.</li></ul>
+<h2>Known limitations</h2><ul><li>Tested only on macOS (Apple Silicon) with Python 3.12.4 and uv 0.12.10; Linux and Windows are documented but untested; the web page was only seen in Chrome.</li><li>The real trials are few, dated November 5, 2026, in French, with a single model; the provider’s prices and models change.</li><li>No server deployment was tested; the Docker resource was never built.</li><li>The English, Spanish and German editions have had no native human review.</li></ul>
+
+</body></html>

@@ -1,0 +1,7 @@
+body{font:16px/1.55 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#14183a}
+h1{font-size:1.7rem;margin-bottom:.2rem}h1 small{display:block;font-size:1rem;font-weight:400;color:#555}
+h2{font-size:1.15rem;margin-top:2rem;border-bottom:2px solid #f8765a;padding-bottom:.2rem}
+code{background:#eef0f6;padding:0 .25rem;border-radius:3px;font-size:.92em}
+table{border-collapse:collapse}td{padding:.15rem 1rem .15rem 0}
+.sha{font:12px/1.4 monospace;word-break:break-all;color:#444}
+nav a{margin-right:1rem}

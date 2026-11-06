@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ihre ersten KI-Agenten – Schritt für Schritt — Belk Siri</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<nav>Andere Sprachen: <a href="fr.html">Français</a> <a href="en.html">English</a> <a href="es.html">Español</a></nav>
+<h1>Ihre ersten KI-Agenten – Schritt für Schritt<small>Belk Siri</small></h1>
+<p>Begleitmaterial zum Buch von Belk Siri: der vollständige Code des Projekts Rivelune, seine Tests, die Lösungen der Übungen und die Spuren der im Buch beschriebenen echten Versuche.</p>
+<h2>Downloads</h2><ul><li><a href="telechargements/vos-premiers-agents-ia-code.zip">vos-premiers-agents-ia-code.zip</a> (398 Ko) — Code des Buches (Ordner <code>code/</code>, mit Tests und Lösungen)</li><li><a href="telechargements/essais-reels-2026-11-05.zip">essais-reels-2026-11-05.zip</a> (132 Ko) — Spuren der echten Versuche vom 5. November 2026 (optional, zum Prüfen der Zahlen des Buches; nicht im Ordner <code>code/</code> entpacken)</li></ul>
+<p><strong>SHA-256-Prüfsummen</strong></p><div class="sha"><div>9c1f260ad550f3e6fa654acc5f15b8e761fcae0f41ee5b7f7b70c471443c2289  vos-premiers-agents-ia-code.zip</div><div>d506cd9e0f8f4498924345f24a853e7de1437f3df1c6e8e1b22c7461c22547e9  essais-reels-2026-11-05.zip</div></div>
+<h2>Installation</h2><ol><li>Installieren Sie <a href="https://docs.astral.sh/uv/">uv</a>; es installiert bei Bedarf auch Python.</li><li>Entpacken Sie das Code-Archiv und wechseln Sie in den Ordner <code>code/</code>.</li><li>Starten Sie <code>uv sync --locked</code>, dann <code>uv run pytest</code>: Die Tests laufen ohne Schlüssel, mit einem simulierten Modell.</li><li>Starten Sie <code>uv run assistant demo</code> für eine erste kostenlose Vorführung.</li><li>Für die Webseite aus Kapitel 11: <code>uv sync --locked --extra interface</code>.</li><li>Aufrufe eines echten Modells sind kostenpflichtig und standardmäßig gesperrt: Folgen Sie Kapitel 2 (Schlüssel in <code>code/.env</code>, Schalter <code>ASSISTANT_ALLOW_LIVE</code>, Ausgabengrenzen). Geben Sie Ihren Schlüssel nie weiter.</li></ol>
+<h2>Verwendete Versionen</h2><table><tr><td>Python</td><td>3.12.4 (≥ 3.11)</td></tr><tr><td>uv</td><td>0.12.10</td></tr><tr><td>anthropic (SDK)</td><td>2.3.0</td></tr><tr><td>pydantic</td><td>2.14.2</td></tr><tr><td>streamlit</td><td>1.66.1</td></tr></table>
+<h2>Lizenzen</h2><ul><li>Code und Werkzeuge: MIT-Lizenz.</li><li>Demodokumente „Rivelune“: CC BY 4.0, soweit die Rechte bestehen; Rivelune und seine Personen sind erfunden.</li><li>Text und Abbildungen des Buches: alle Rechte vorbehalten; sie sind hier nicht enthalten.</li></ul>
+<h2>Bekannte Grenzen</h2><ul><li>Nur unter macOS (Apple Silicon) mit Python 3.12.4 und uv 0.12.10 getestet; Linux und Windows sind beschrieben, aber ungetestet; die Webseite wurde nur in Chrome angesehen.</li><li>Die echten Versuche sind wenige, vom 5. November 2026, auf Französisch, mit einem einzigen Modell; Preise und Modelle des Anbieters ändern sich.</li><li>Keine Bereitstellung auf einem Server wurde getestet; das Docker-Hilfsmittel wurde nie gebaut.</li><li>Die englische, spanische und deutsche Ausgabe wurden nicht von Muttersprachlern geprüft.</li></ul>
+
+</body></html>
