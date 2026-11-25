@@ -1,1 +1,4 @@
+dd999f2710671420c1e5011f8d2037e47cef9ccddde87080b23c6c264923c351  maths-pour-l-ia-pas-a-pas-ressources-de.zip
+237cb94f0a30c5a42040847ad5445446219929c2fef48f255bc1dd17847917c9  maths-pour-l-ia-pas-a-pas-ressources-en.zip
+353c9527b5b04fa69d127cdb2dd55113a526707471adf79b33029696ba5d0db2  maths-pour-l-ia-pas-a-pas-ressources-es.zip
 c8516553ec0de7a2d6fb2fdfc5de450fd3e86d792b9beae6142257a604da7118  maths-pour-l-ia-pas-a-pas-ressources-fr.zip
