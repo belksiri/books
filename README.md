@@ -8,7 +8,7 @@ couverture. Chaque livre occupe son propre dossier.
 |---|---|---|
 | *Data science avec Python, pas à pas* | v1.0.1 | [https://belksiri.github.io/books/data-science-python-pas-a-pas/](https://belksiri.github.io/books/data-science-python-pas-a-pas/) |
 | *Vos premiers agents IA, pas à pas* | v1.0.0 | [https://belksiri.github.io/books/vos-premiers-agents-ia-pas-a-pas/](https://belksiri.github.io/books/vos-premiers-agents-ia-pas-a-pas/) |
-| *Maths pour l'IA, pas à pas* | v1.0.0 | [https://belksiri.github.io/books/maths-pour-l-ia-pas-a-pas/](https://belksiri.github.io/books/maths-pour-l-ia-pas-a-pas/) |
+| *Maths pour l'IA, pas à pas* | v1.1.0 | [https://belksiri.github.io/books/maths-pour-l-ia-pas-a-pas/](https://belksiri.github.io/books/maths-pour-l-ia-pas-a-pas/) |
 
 ## Organisation
 
@@ -40,7 +40,8 @@ sont pas publiés ici. Les corrigés sont distribués séparément.
 Exception : pour *Vos premiers agents IA, pas à pas*, l'archive du code
 contient les corrigés des exercices, comme l'annonce le livre.
 Exception également pour *Maths pour l'IA, pas à pas* : chaque chapitre a son
-notebook à compléter et son corrigé (`maths-pour-l-ia-pas-a-pas/notebooks/fr/`),
+notebook à compléter et son corrigé (`maths-pour-l-ia-pas-a-pas/notebooks/<langue>/`,
+fr, en, es, de : 18 notebooks par langue pour les chapitres 1 à 9),
 que le livre renvoie à ouvrir dans Colab. Ce dossier est produit par
 `compagnon/construire_compagnon.py` dans le projet éditorial et copié tel quel ;
 le manuscrit et les fichiers de fabrication restent dans ce projet.
